@@ -11,7 +11,7 @@
 * A Boost library **X** _belongs_ to epoch **BoostN**, denoted **X** ∈ **BoostN**,  if:
   * **X** is compatible with C++**N**,
   * **(rejection rule 1)** the functionality provided by **X** is not already covered by C++**N**,
-  * **(rejection rule 2)** the functionality provided by **X** is not superseded by some other, more modern, library **Y** in the epoch,
+  * **(rejection rule 2)** the functionality provided by **X** is not superseded by some other, more modern, library **Y** in **BoostN**,
   * depN(**X**) ⊆ **BoostN**.
 * Under reasonable assumptions, the epochs a given library belongs in form a contiguous interval from some **BoostN** to some **BoostM** with **M** ≥ **N** . We denote the minimum and maximum epochs comprising **X** by begin(**X**) and end(**X**), respectively. We define span(**X**) as (begin(**X**), end(**X**)). 
 
