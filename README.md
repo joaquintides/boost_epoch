@@ -53,11 +53,11 @@
 
 In order to use bcp for automatic epoch determination, this dependency extraction utility should be updated so as to detect `BOOST_MIN_EPOCH`-conditional header inclusions.
 
-### b2
+#### B2
 
 B2 should be made `BOOST_MIN_EPOCH` aware.
 
-### Package managers
+#### Package managers
 
 Boost does not feature its own package manager, but some external tools (vg. vcpkg) do have a notion of internal dependencies between Boost libraries. It remains to be studied how epoch management can be fitted here.
 
