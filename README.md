@@ -4,7 +4,7 @@
 
 The recent ["Why you don't use Boost"](https://www.reddit.com/r/cpp/comments/gfowpq/why_you_dont_use_boost/) Reddit thread showed some level of discomfort with the current status of the Boost project. From the plethora of information (and noise), we want to distill the following issues (which do not cover the entirety of the discussion):
 
-* Much stuff in Boost is now useless as it was adopted into the C++11 standard itself.
+* Much stuff in Boost is now useless as it was adopted into the C++ standard itself.
 * There is an unnacceptably high level of internal dependencies among libraries ("pulling one library drags most of Boost in").
 * Very high compilation times (partly attributable to internal dependencies).
 
