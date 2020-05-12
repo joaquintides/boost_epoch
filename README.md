@@ -2,6 +2,22 @@
 
 ## Introduction
 
+The recent ["Why you don't use Boost"](https://www.reddit.com/r/cpp/comments/gfowpq/why_you_dont_use_boost/) Reddit thread showed some level of discomfort with the current status of the Boost project. From the plethora of information (and noise), we want to distill the following issues (which do not cover the entirety of the discussion):
+
+* Much stuff in Boost is now useless as it was adopted into the C++11 standard itself.
+* There is an unnacceptably high level of internal dependencies among libraries ("pulling one library drags most of Boost in").
+* Very high compilation times (partly attributable to internal dependencies).
+
+We propose an epoch-based mechanism that can potentially alleviate these problems in a sensible, non-disruptive manner.
+
+### Goals
+
+This proposal tries to balance a number of antagonistic forces in the process:
+
+* Provide a tunable mechanism for users to select how modern the Boost libraries they select are.
+* Incentivize Boost authors to embrace newer versions of the C++ standard and get rid of internal dependencies while offering a path to  backwards compatibility and respecting their absolute sovereignty over the libraries they maintain.
+* Promote a general Boost trend towards leaner, less entangled and more modern libraries. When starting anew, Boost made crucial contributions to the evolution of C++03 to C++11: we want to regain this role as C++20 progresses towards C++23 and beyond.
+
 ## Definitions
 
 * Boost _epochs_ are named according to the release year of C++ standard revisions: **Boost03**, **Boost11**, ... , **Boost20**, etc.
@@ -37,8 +53,8 @@
 * But now there is a social incentive to extend the epoch span of a library **X**. This can be done in basically two ways, according to how conservative the author is with respect to backwards compatibility:
   * Replacement of internal dependencies with C++ native equivalents: increases _both_ begin(**X**) and end(**X**).
   * Conditional inclusion of internal dependencies or native equivalents based on `BOOST_MIN_EPOCH`: keeps begin(**X**) and increases end(**X**).
-* `BOOST_MIN_EPOCH`-conditional inclusion is likely to improve compilation times in more recent epochs, as whole legacy headers (and their dependencies) will just not be processed. This adds yet another incentive for modernization even in the case of conservative authors who do not wish to break backward compatiblity.
-* In the case of abandoned libraries,the Boost Community Maintenance Team can take on `BOOST_MIN_EPOCH`-conditional modernization as this looks like a moderately straigthforward procedure.
+* `BOOST_MIN_EPOCH`-conditional inclusion is likely to improve compilation times in more recent epochs, as whole legacy headers (and their dependencies) will just not be processed. This adds yet another incentive for modernization even in the case of conservative authors who do not wish to break backwards compatiblity.
+* In the case of abandoned libraries, the Boost Community Maintenance Team can take on `BOOST_MIN_EPOCH`-conditional modernization as this looks like a moderately straigthforward procedure.
 
 ### For Boost management
 
@@ -55,7 +71,7 @@ In order to use bcp for automatic epoch determination, this dependency extractio
 
 #### B2
 
-B2 should be made `BOOST_MIN_EPOCH` aware.
+B2 should be made `BOOST_MIN_EPOCH` aware. Note that binary redistributables depend on `BOOST_MIN_EPOCH`.
 
 #### Package managers
 
