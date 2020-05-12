@@ -5,7 +5,7 @@
 The recent ["Why you don't use Boost"](https://www.reddit.com/r/cpp/comments/gfowpq/why_you_dont_use_boost/) Reddit thread showed some level of discomfort with the current status of the Boost project. From the plethora of information (and noise), we want to distill the following issues (which do not cover the entirety of the discussion):
 
 * Much stuff in Boost is now useless as it was adopted into the C++ standard itself.
-* There is an unnacceptably high level of internal dependencies among libraries ("pulling one library drags most of Boost in").
+* There is an unacceptably high level of internal dependencies among libraries ("pulling one library drags most of Boost in").
 * Very high compilation times (partly attributable to internal dependencies).
 
 We propose an epoch-based mechanism that can potentially alleviate these problems in a sensible, non-disruptive manner.
@@ -45,7 +45,7 @@ This proposal tries to balance a number of antagonistic forces in the process:
 
 * Users can modulate the amount of "legacy" stuff they are willing to tolerate by setting `BOOST_MIN_EPOCH` to a value of their choice, presumably to match their C++ baseline version.
 * Settling on a minimum Boost epoch means that fundamental libraries already covered natively by C++ will not polute the workspace, but also bans "old" libraries that have not evolved/adapted to get rid of these dependencies.
-* When a particular library is sought for that does not reach a mininimum epoch, users can either lower their `BOOST_MIN_EPOCH` or press the associated Boost author to modernize the library.
+* When a particular library is sought for that does not reach a minimum epoch, users can either lower their `BOOST_MIN_EPOCH` or press the associated Boost author to modernize the library.
 
 ### For Boost authors
 
