@@ -1,7 +1,7 @@
 # Boost 1.73 legacy report
 
-We have made a simulation to determine which Boost libraries would potentially
-be promoted to epoch **Boost11**. The simulation runs a [dependency check utility](legacy_check.py)
+We have run a simulation to determine which Boost libraries would potentially
+be promoted to epoch **Boost11**. The simulation uses a [dependency check utility](legacy_check.py)
 based on [Boostdep](https://www.boost.org/tools/boostdep/doc/html/index.html) that detects
 those libraries dependent on any of the following "legacy" modules:
 `array`, `bind`, `function`, `lambda`, `mpl`, `smart_ptr`, `thread`, `tuple`. Libaries without
