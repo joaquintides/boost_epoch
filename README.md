@@ -31,7 +31,7 @@ This proposal tries to balance a number of antagonistic forces in the process:
   * all the libraries in depN(**X**) belong to **BoostN**.
 * Under reasonable assumptions, the epochs a given library belongs in form a contiguous interval from some **BoostN** to some **BoostM** with **N** ≤ **M** . We denote the minimum and maximum epochs comprising **X** by begin(**X**) and end(**X**), respectively. We define span(**X**) as (begin(**X**), end(**X**)).
 
-The definitions above imply that libraries in epoch **BoostN** won't depend internally on any library whose maximum epoch is below **N**.
+From these definitions, it follows that each epoch **BoostN** is a self-contained set without internal dependencies to other Boost libraries outside the epoch.
 
 ### Examples
 
