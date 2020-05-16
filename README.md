@@ -24,11 +24,11 @@ This proposal tries to balance a number of antagonistic forces in the process:
 * A Boost library _belongs_ to one or more epochs according to rules defined below.
 * Users indicate the miminum version of the C++ standard supported by their project by setting a global level preprocessor symbol `BOOST_ASSUME_STD`, with possible values 03 (the default), 11, 14, etc.
 * A Boost library **X** _depends on_ another Boost library **Y** _for epoch_ **BoostN** if **X** depends on **Y** when `BOOST_ASSUME_STD` is set to **N**. The set of dependencies of **X** for epoch **BoostN** is denoted by depN(**X**).
-* A Boost library **X** _belongs_ to epoch **BoostN**, denoted **X** ∈ **BoostN**,  if:
+* A Boost library **X** _belongs_ to epoch **BoostN** if:
   * **X** is compatible with C++**N**,
   * **(rejection rule 1)** the functionality provided by **X** is not already covered by C++**N**,
   * **(rejection rule 2)** the functionality provided by **X** is not superseded by some other, more modern, library **Y** in **BoostN**,
-  * depN(**X**) ⊆ **BoostN**.
+  * all the libraries in depN(**X**) belong to **BoostN**.
 * Under reasonable assumptions, the epochs a given library belongs in form a contiguous interval from some **BoostN** to some **BoostM** with **N** ≤ **M** . We denote the minimum and maximum epochs comprising **X** by begin(**X**) and end(**X**), respectively. We define span(**X**) as (begin(**X**), end(**X**)).
 
 The definitions above imply that libraries in epoch **BoostN** won't depend internally on any library whose maximum epoch is below **N**.
