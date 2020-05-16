@@ -22,7 +22,7 @@ This proposal tries to balance a number of antagonistic forces in the process:
 
 * Boost _epochs_ are named according to the release year of C++ standard revisions: **Boost03**, **Boost11**, ... , **Boost20**, etc.
 * A Boost library _belongs_ to one or more epochs according to rules defined below.
-* Users indicate the miminum version of the C++ standard suported by their project by setting a global level preprocessor symbol `BOOST_ASSUME_STD`, with possible values 03 (the default), 11, 14, etc.
+* Users indicate the miminum version of the C++ standard supported by their project by setting a global level preprocessor symbol `BOOST_ASSUME_STD`, with possible values 03 (the default), 11, 14, etc.
 * A Boost library **X** _depends on_ another Boost library **Y** _for epoch_ **BoostN** if **X** depends on **Y** when `BOOST_ASSUME_STD` is set to **N**. The set of dependencies of **X** for epoch **BoostN** is denoted by depN(**X**).
 * A Boost library **X** _belongs_ to epoch **BoostN**, denoted **X** ∈ **BoostN**,  if:
   * **X** is compatible with C++**N**,
@@ -46,7 +46,7 @@ The definitions above imply that libraries in epoch **BoostN** won't depend inte
 ### For users
 
 * Users can modulate the amount of "legacy" stuff they don't want to depend on by setting `BOOST_ASSUME_STD` to a value of their choice, presumably to match their C++ baseline version.
-* Settling on a minimum Boost epoch means that *pre-epoch* libs (those whose maximum epoch does not reach the threshold) won't be internally used and can be safely ommited from the local installation.
+* Settling on a minimum Boost epoch means that *pre-epoch* libs (those whose maximum epoch does not reach the threshold) won't be internally used and can be safely omitted from the local installation.
 * On the other hand, pre-epoch libraries can be explicitly used by users if they so decide. In case a corporate or project-specific ban exists on older Boost epochs, users are expected to press the Boost authors to modernize those libraries of their interest.
 
 ### For Boost authors
