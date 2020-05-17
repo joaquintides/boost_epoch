@@ -1,4 +1,4 @@
-# Relevancy of Boost libraries vs. standard equivalents
+# Relevance of Boost libraries vs. standard equivalents
 
 As a crude way to assess how the importance of certain Boost libraries have varied
 among the public with the introduction of equivalent components in the C++ standard, we have issued
