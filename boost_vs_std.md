@@ -11,4 +11,5 @@ with **Boost.Mp11**.
 
 ![any](boost_vs_std/any.png)![array](boost_vs_std/array.png)![bind](boost_vs_std/bind.png)
 ![function](boost_vs_std/function.png)![mpl](boost_vs_std/mpl.png)![optional](boost_vs_std/optional.png)
-![shared_ptr](boost_vs_std/shared_ptr.png)![thread](boost_vs_std/thread.png)![tuple](boost_vs_std/tuple.png)
+![regex](boost_vs_std/regex.png)![shared_ptr](boost_vs_std/shared_ptr.png)![thread](boost_vs_std/thread.png)
+![tuple](boost_vs_std/tuple.png)
