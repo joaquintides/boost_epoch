@@ -1,7 +1,4 @@
 # Proposal for an epoch-based organization of Boost libraries
-<img src="boost_vs_std/any.png" width="393px" height="288px"/><img src="boost_vs_std/any.png" width="393px" height="288px"/><img src="boost_vs_std/any.png" width="393px" height="288px"/>
-
-
 
 ## Introduction
 
