@@ -22,8 +22,8 @@ This proposal tries to balance a number of antagonistic forces in the process:
 
 * Boost _epochs_ are named according to the release year of C++ standard revisions: **Boost03**, **Boost11**, ... , **Boost20**, etc.
 * A Boost library _belongs_ to one or more epochs according to rules defined below.
-* Users indicate the miminum version of the C++ standard supported by their project by setting a global level preprocessor symbol `BOOST_ASSUME_STD`, with possible values 03 (the default), 11, 14, etc.
-* A Boost library **X** _depends on_ another Boost library **Y** _for epoch_ **BoostN** if **X** depends on **Y** when `BOOST_ASSUME_STD` is set to **N**. Transitive dependencies are taken into account. The set of dependencies of **X** for epoch **BoostN** is denoted by depN(**X**).
+* Users indicate the miminum version of the C++ standard supported by their project by setting a global level preprocessor symbol `BOOST_ASSUME_CXX`, with possible values 03 (the default), 11, 14, etc.
+* A Boost library **X** _depends on_ another Boost library **Y** _for epoch_ **BoostN** if **X** depends on **Y** when `BOOST_ASSUME_CXX` is set to **N**. Transitive dependencies are taken into account. The set of dependencies of **X** for epoch **BoostN** is denoted by depN(**X**).
 * A Boost library **X** _belongs_ to epoch **BoostN** if:
   * **X** is compatible with C++**N**,
   * **(rejection rule 1)** the functionality provided by **X** is not already covered by C++**N**,
@@ -45,7 +45,7 @@ From these definitions, it follows that each epoch **BoostN** is a self-containe
 
 ### For users
 
-* Users can modulate the amount of "legacy" stuff they don't want to depend on by setting `BOOST_ASSUME_STD` to a value of their choice, presumably to match their C++ baseline version.
+* Users can modulate the amount of "legacy" stuff they don't want to depend on by setting `BOOST_ASSUME_CXX` to a value of their choice, presumably to match their C++ baseline version.
 * Settling on a minimum Boost epoch means that *pre-epoch* libs (those whose maximum epoch does not reach the threshold) won't be internally used and can be safely omitted from the local installation.
 * On the other hand, pre-epoch libraries can be explicitly used by users if they so decide. In case a corporate or project-specific ban exists on older Boost epochs, users are expected to press the Boost authors to modernize those libraries of their interest.
 
@@ -54,9 +54,9 @@ From these definitions, it follows that each epoch **BoostN** is a self-containe
 * Authors retain full control over their libraries. If left untouched, a library will continue to belong in epoch **Boost03** for ever.
 * But now there is a social incentive to extend the epoch span of a library **X**. This can be done in basically two ways, according to how conservative the author is with respect to backwards compatibility:
   * Replacement of internal dependencies with C++ native equivalents: increases _both_ begin(**X**) and end(**X**).
-  * Conditional inclusion of internal dependencies or native equivalents based on `BOOST_ASSUME_STD`: keeps begin(**X**) and increases end(**X**).
-* `BOOST_ASSUME_STD`-conditional inclusion is likely to improve compilation times in more recent epochs, as whole legacy headers (and their dependencies) will just not be processed. This adds yet another incentive for modernization even in the case of conservative authors who do not wish to break backwards compatiblity.
-* In the case of abandoned libraries, the Boost Community Maintenance Team can take on `BOOST_ASSUME_STD`-conditional modernization as this looks like a moderately straigthforward procedure.
+  * Conditional inclusion of internal dependencies or native equivalents based on `BOOST_ASSUME_CXX`: keeps begin(**X**) and increases end(**X**).
+* `BOOST_ASSUME_CXX`-conditional inclusion is likely to improve compilation times in more recent epochs, as whole legacy headers (and their dependencies) will just not be processed. This adds yet another incentive for modernization even in the case of conservative authors who do not wish to break backwards compatiblity.
+* In the case of abandoned libraries, the Boost Community Maintenance Team can take on `BOOST_ASSUME_CXX`-conditional modernization as this looks like a moderately straigthforward procedure.
 
 ### For Boost management
 
@@ -69,11 +69,11 @@ From these definitions, it follows that each epoch **BoostN** is a self-containe
 
 #### bcp
 
-In order to use bcp for automatic epoch determination, this dependency extraction utility should be updated so as to detect `BOOST_ASSUME_STD`-conditional header inclusions.
+In order to use bcp for automatic epoch determination, this dependency extraction utility should be updated so as to detect `BOOST_ASSUME_CXX`-conditional header inclusions.
 
 #### B2
 
-B2 should be made `BOOST_ASSUME_STD` aware. Note that binary redistributables depend on `BOOST_ASSUME_STD`.
+B2 should be made `BOOST_ASSUME_CXX` aware. Note that binary redistributables depend on `BOOST_ASSUME_CXX`.
 
 #### Package managers
 
