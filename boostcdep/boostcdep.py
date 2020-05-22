@@ -8,7 +8,6 @@
 # See https://github.com/joaquintides/boost_epoch/ for project home page.
 
 import argparse
-import math
 import os
 import re
 import sys
