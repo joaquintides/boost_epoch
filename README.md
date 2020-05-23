@@ -141,7 +141,7 @@ Epochs unify these mechanisms under the common `BOOST_ASSUME_CXX` macro.
 **What happens if my Boost library is blocked because a new C++ standard has subsumed it?**
 
 In principle, your library won't progress into the new epoch (and thus will be
-discouraged as an internal dependency). Other than that, users can stll enjoy it.
+discouraged as an internal dependency). Other than that, users can still enjoy it.
 
 **But my lib is better/has more functionality than the C++ replacement**
 
