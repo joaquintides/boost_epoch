@@ -3,6 +3,7 @@
 ## Contents
 
 * [Introduction](#introduction)
+* [Goals](#goals)
 * [Definitions](#definitions)
 * [How does the scheme work](#how-does-the-scheme-work)
 * [Feedback](#feedback)
@@ -17,7 +18,7 @@ The recent ["Why you don't use Boost"](https://www.reddit.com/r/cpp/comments/gfo
 
 We propose an epoch-based mechanism that can potentially alleviate these problems in a sensible, non-disruptive manner.
 
-### Goals
+## Goals
 
 This proposal tries to balance a number of antagonistic forces in the process:
 
