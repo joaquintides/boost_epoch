@@ -143,6 +143,24 @@ Yes:
 
 Epochs unify these mechanisms under the common `BOOST_ASSUME_CXX` macro.
 
+**What happens if my Boost library is blocked because a new C++ standard has subsumed it?**
+
+In principle, your library won't progress into the new epoch (and thus will be
+discouraged as an internal dependency). Other than that, users can stll enjoy it.
+
+**But my lib is better/has more functionality than the C++ replacement**
+
+This is controversial. In some cases (maybe with **Boost.Regex**), the library will
+be "allowed" to progress. For the rest, a better approach would be to launch a new
+**Boost.X2** libray and let the original **Boost.X** serve its ancillary
+role for older epochs. This is for instance the approach followed by **Boost.Variant2**.
+
+All said, some libraries won't be allowed to progress and this is good, as one
+of the main goals of epochs is to reduce internal dependencies when the C++ standard library/laguage
+can be resorted to. Think about it this way: if you were writing  a **new** candidate Boost library
+with C++11 as its baseline, would you strive to use `std` components rather than their
+Boost counterparts, no matter how good the latter are? I would say you would.
+
 **How does this compare to other initiatives proposing dropping C++03 suport?**
 
 The most articulatd proposal in this area in Boost is
