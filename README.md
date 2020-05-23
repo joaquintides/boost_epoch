@@ -6,6 +6,7 @@
 * [Goals](#goals)
 * [Definitions](#definitions)
 * [How does the scheme work](#how-does-the-scheme-work)
+* [FAQ](#faq)
 * [Supporting material](#supporting-material)
 * [Feedback](#feedback)
 
@@ -93,6 +94,76 @@ Boost does not feature its own package manager, but some external tools (vg. vcp
 * [Relevance of Boost libraries vs. standard equivalents](boost_vs_std.md)
 * [Boost 1.73 legacy report](legacy_report.md)
 * [`boostcdep`: Boost conditional dependency calculator](boostcdep)
+
+## FAQ
+
+**Is this a fork proposal?**
+
+No, it is not. In fact, epochs strive to make forking less attractive by allowing different modernization
+speeds across Boost libraries. Note that the entire Boost source code tree remains the same no matter
+the value of `BOOST_ASSUME_CXX`.
+
+**Can I use Boost03 libraries if I set `BOOST_ASSUME_CXX`=11?**
+
+Yes. Setting `BOOST_ASSUME_CXX`=11 will guarantee that **Boost11** libraries do not internally use
+**Boost03** components, but these can be used by the user if so she whishes. Think of epochs as
+*badges* earned by libraries living on an otherwise unique repository.
+
+**What happens to binary redistributales in the presence of `BOOST_ASSUME_CXX`?**
+
+Care must be exercised here. Linking a binary object built under a different
+`BOOST_ASSUME_CXX` value than used by the project will likely lead to incompatibilities,
+much as, say, when you link a binary built with multithreading options in a single-thread
+project.
+
+If the epochs proposal progresses to a point where `BOOST_ASSUME_CXX`-labeled distributions are
+provided, this value should go as a name qualifier so as to distinguish, for instance,
+`libboost11.so` from `libboost20.so`.
+
+**As a Boost author, how can I earn new epoch badges?**
+
+If your library is blocked from epoch progression due to internal dependencies with
+pre-epoch components, you can:
+
+* Remove these dependencies entirely, either in a backwards-compatible way (if possible)
+or not.
+* Make the dependencies conditional on the C++ standard assumed. To do this you can
+either rely on `BOOST_ASSUME_CXX`-conditional inclusion or just go your way with
+**Boost.Config** compatibility macros: the difference is that dependency tuning is
+selectable by the user in the former case and automatic in the latter.
+
+**Is there any Boost library doing something like this now?**
+
+Yes:
+
+* **Boost.Beast** let users remove dependencies on `boost::string_view` via the
+[`BOOST_BEAST_USE_STD_STRING_VIEW` macro](https://www.boost.org/libs/beast/doc/html/beast/config/configuration_preprocessor_defin.html)
+(C++17 required).
+* **Boost.StaticString** provides [`BOOST_STATIC_STRING_STANDALONE`](https://www.boost.org/libs/static_string/doc/html/index.html#static_string.configuration) to eliminate all internal Boost dependencies in C++17.
+
+Epochs unify these mechanisms under the common `BOOST_ASSUME_CXX` macro.
+
+**How does this compare to other initiatives proposing dropping C++03 suport?**
+
+The most articulatd proposal in this area in Boost is
+[Peter Dimov's](https://pdimov.github.io/articles/phasing_out_cxx03.html), which
+focuses on providing authors with protocols for deprecating and removing
+C++03 support on their libs, though there have been also discussions on declaring C++03
+officially unsupported across the entire Boost project (and removing C++03 regression
+testers, for instance).
+
+Whatever the approach, these "drop03" proposals do not specifically target the goal of reducing
+internal dependencies with legacy Boost libs: unless a destructive move is made, a Boost library
+dependent on legacy components such **Boost.Array**, **Boost.Tuple**, etc., will continue
+to work fine as-is in C++11. Epochs, on the other hand, provide a publicly visible way to
+monitor modernization status, which presumably might further incentivize authors.
+
+Conversely, epochs do not explicitly advocate the removal of C++03 support: this is just one
+available resource among others for achieving modernization (progression to newer epochs).
+
+To summarize, drop03 and epochs share a general aspiration to modernize Boost code base
+but their ways and specific goals are somewhat different. It should be noted that these
+proposals are ultimately compatible and could be carried out simultaneously.
 
 ## Feedback
 
