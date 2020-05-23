@@ -89,12 +89,6 @@ B2 should be made `BOOST_ASSUME_CXX` aware. Note that binary redistributables de
 
 Boost does not feature its own package manager, but some external tools (vg. vcpkg) do have a notion of internal dependencies between Boost libraries. It remains to be studied how epoch management can be fitted here.
 
-## Supporting material
-
-* [Relevance of Boost libraries vs. standard equivalents](boost_vs_std.md)
-* [Boost 1.73 legacy report](legacy_report.md)
-* [`boostcdep`: Boost conditional dependency calculator](boostcdep)
-
 ## FAQ
 
 **Is this a fork proposal?**
@@ -182,6 +176,12 @@ available resource among others for achieving modernization (progression to newe
 To summarize, drop03 and epochs share a general aspiration to modernize Boost code base
 but their ways and specific goals are somewhat different. It should be noted that these
 proposals are ultimately compatible and could be carried out simultaneously.
+
+## Supporting material
+
+* [Relevance of Boost libraries vs. standard equivalents](boost_vs_std.md)
+* [Boost 1.73 legacy report](legacy_report.md)
+* [`boostcdep`: Boost conditional dependency calculator](boostcdep)
 
 ## Feedback
 
