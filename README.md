@@ -1,5 +1,12 @@
 # Proposal for an epoch-based organization of Boost libraries
 
+## Contents
+
+* [Introduction](#introduction)
+* [Definitions](#definitions)
+* [How does the scheme work](#how-does-the-scheme-work)
+* [Feedback](#feedback)
+
 ## Introduction
 
 The recent ["Why you don't use Boost"](https://www.reddit.com/r/cpp/comments/gfowpq/why_you_dont_use_boost/) Reddit thread showed some level of discomfort with the current status of the Boost project. From the plethora of information (and noise), we want to distill the following issues (which do not cover the entirety of the discussion):
