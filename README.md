@@ -33,7 +33,7 @@ This proposal tries to balance a number of antagonistic forces in the process:
 
 * Boost _epochs_ are named according to the release year of C++ standard revisions: **Boost03**, **Boost11**, ... , **Boost20**, etc.
 * A Boost library _belongs_ to one or more epochs according to rules defined below.
-* Users indicate the miminum version of the C++ standard supported by their project by setting a global level preprocessor symbol `BOOST_ASSUME_CXX`, with possible values 03 (the default), 11, 14, etc.
+* Users indicate the minimum version of the C++ standard supported by their project by setting a global level preprocessor symbol `BOOST_ASSUME_CXX`, with possible values 03 (the default), 11, 14, etc.
 * A Boost library **X** _depends on_ another Boost library **Y** _for epoch_ **BoostN** if **X** depends on **Y** when `BOOST_ASSUME_CXX` is set to **N**. Transitive dependencies are taken into account. The set of dependencies of **X** for epoch **BoostN** is denoted by depN(**X**).
 * A Boost library **X** _belongs_ to epoch **BoostN** if:
   * **X** is compatible with C++**N**,
@@ -156,9 +156,9 @@ can be resorted to. Think about it this way: if you were writing  a **new** cand
 with C++11 as its baseline, would you strive to use `std` components rather than their
 Boost counterparts, no matter how good the latter are? I would say you would.
 
-**How does this compare to other initiatives proposing dropping C++03 suport?**
+**How does this compare to other initiatives proposing Boost dropping C++03 support?**
 
-The most articulatd proposal in this area in Boost is
+The most articulated proposal in this area is
 [Peter Dimov's](https://pdimov.github.io/articles/phasing_out_cxx03.html), which
 focuses on providing authors with protocols for deprecating and removing
 C++03 support on their libs, though there have been also discussions on declaring C++03
