@@ -6,6 +6,7 @@
 * [Goals](#goals)
 * [Definitions](#definitions)
 * [How does the scheme work](#how-does-the-scheme-work)
+* [Supporting material](#supporting-material)
 * [Feedback](#feedback)
 
 ## Introduction
@@ -86,6 +87,12 @@ B2 should be made `BOOST_ASSUME_CXX` aware. Note that binary redistributables de
 #### Package managers
 
 Boost does not feature its own package manager, but some external tools (vg. vcpkg) do have a notion of internal dependencies between Boost libraries. It remains to be studied how epoch management can be fitted here.
+
+## Supporting material
+
+* [Relevance of Boost libraries vs. standard equivalents](boost_vs_std.md)
+* [Boost 1.73 legacy report](legacy_report.md)
+* [`boostcdep`: Boost conditional dependency calculator](boostcdep)
 
 ## Feedback
 
