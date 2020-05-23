@@ -147,7 +147,7 @@ discouraged as an internal dependency). Other than that, users can still enjoy i
 
 This is controversial. In some cases (maybe with **Boost.Regex**), the library will
 be "allowed" to progress. For the rest, a better approach would be to launch a new
-**Boost.X2** libray and let the original **Boost.X** serve its ancillary
+**Boost.X2** library and let the original **Boost.X** serve its ancillary
 role for older epochs. This is for instance the approach followed by **Boost.Variant2**.
 
 All said, some libraries won't be allowed to progress and this is good, as one
