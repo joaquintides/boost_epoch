@@ -104,7 +104,7 @@ Yes. Setting `BOOST_ASSUME_CXX`=11 will guarantee that **Boost11** libraries do 
 **Boost03** components, but these can be used by the user if so she whishes. Think of epochs as
 *badges* earned by libraries living on an otherwise unique repository.
 
-**What happens to binary redistributales in the presence of `BOOST_ASSUME_CXX`?**
+**What happens to binary redistributables in the presence of `BOOST_ASSUME_CXX`?**
 
 Care must be exercised here. Linking a binary object built under a different
 `BOOST_ASSUME_CXX` value than used by the project will likely lead to incompatibilities,
