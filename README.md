@@ -156,7 +156,7 @@ be "allowed" to progress. For the rest, a better approach would be to launch a n
 role for older epochs. This is for instance the approach followed by **Boost.Variant2**.
 
 All said, some libraries won't be allowed to progress and this is good, as one
-of the main goals of epochs is to reduce internal dependencies when the C++ standard library/laguage
+of the main goals of epochs is to reduce internal dependencies when the C++ standard library/language
 can be resorted to. Think about it this way: if you were writing  a **new** candidate Boost library
 with C++11 as its baseline, would you strive to use `std` components rather than their
 Boost counterparts, no matter how good the latter are? I would say you would.
