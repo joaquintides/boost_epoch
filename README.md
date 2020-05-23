@@ -7,6 +7,7 @@
 * [Definitions](#definitions)
 * [How does the scheme work](#how-does-the-scheme-work)
 * [FAQ](#faq)
+* [Work plan](#work-plan)
 * [Supporting material](#supporting-material)
 * [Feedback](#feedback)
 
@@ -176,6 +177,35 @@ available resource among others for achieving modernization (progression to newe
 To summarize, drop03 and epochs share a general aspiration to modernize Boost code base
 but their ways and specific goals are somewhat different. It should be noted that these
 proposals are ultimately compatible and could be carried out simultaneously.
+
+## Work plan
+
+Boost epochs can be implemented in a number of incremental stages:
+
+### Phase 0: `BOOST_ASSUME_CXX` support
+
+* Make `BOOST_ASSUME_CXX` the official mechanism for internal depedency tuning.
+* Set up a page in boost.org explaning this.
+* Invite authors to use/move to `BOOST_ASSUME_CXX`.
+
+### Phase 1: Epoch badges:
+
+* Create a tool for conditional dependency calculation. [`boostcdep`](boostcdep) is offered
+as a prototype of such tool.
+* Assign 03-20 epoch badges to every Boost library. This work is divided in two tasks:
+  * Determine which libraries are deemed as subsumed by the standard. This is the
+  most controversial part of the project, and it probably should be made by some central
+  authority like the Boost Steering Committee.
+  * Assign epoch badges automatically to the rest, based on conditional dependency calculation.
+* Make epoch badges visible in Boost documentation (for instance, as attributes in
+  the [Boost directory](https://www.boost.org/doc/libs/)).
+  
+### Phase 2: Epoch-based distribution
+
+* Upgrade bcp or similar tools to do epoch-based extraction of libraries out of the
+general Boost source code tree.
+* Work on epoch-qualified package distribution of the entire Boost project and individual
+libraries.
 
 ## Supporting material
 
