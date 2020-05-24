@@ -4,7 +4,7 @@ We have run a simulation to determine which Boost libraries would potentially
 be promoted to epoch **Boost11**. The simulation uses a [dependency check utility](legacy_check.py)
 based on [Boostdep](https://www.boost.org/tools/boostdep/doc/html/index.html) that detects
 those libraries dependent on any of the following "legacy" modules:
-`array`, `bind`, `function`, `lambda`, `mpl`, `smart_ptr`, `thread`, `tuple`. Libaries without
+`array`, `bind`, `function`, `lambda`, `mpl`, `smart_ptr`, `thread`, `tuple`. Libraries without
 dependencies to these are deemed eligible for promotion to **Boost11**. Disclaimer: this is merely
 a simulation and it is debatable which exact foundational libraries are really to be rejected for
 **Boost11**.
