@@ -158,7 +158,7 @@ Boost counterparts, no matter how good the latter are? I would say you would.
 
 **How does this compare to other initiatives proposing Boost dropping C++03 support?**
 
-The most articulated proposal in this area is
+The most prominent proposal in this area is
 [Peter Dimov's](https://pdimov.github.io/articles/phasing_out_cxx03.html), which
 focuses on providing authors with protocols for deprecating and removing
 C++03 support on their libs, though there have been also discussions on declaring C++03
