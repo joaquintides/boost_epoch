@@ -25,7 +25,7 @@ and strings (except strings within a preprocessor directive, such as
 
 **&lt;module&gt;**
 
-Optional. If provided, resticts the search to this module alone.
+Optional. If provided, restricts the search to this module alone.
 
 **-b \[--boost-root \] &lt;path-to-boost&gt;**
 
