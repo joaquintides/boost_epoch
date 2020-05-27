@@ -135,10 +135,8 @@ def grep_file(filename,first_only=True):
 
 def grep_dir(path,first_only=True):
   admitted_extensions={".h",".c",".hpp",".cpp",".hh",".cc",".h+",".c+",".h++",".c++"}
-  excluded_subdirs={"detail","impl"}
   res=[]
   for dirpath, dirnames, filenames in os.walk(path):
-    dirnames[:]=[d for d in dirnames if d not in excluded_subdirs]
     for filename in filenames:
       if not os.path.splitext(filename)[1].lower() in admitted_extensions: continue
       res+=grep_file(os.path.join(dirpath,filename),first_only)
