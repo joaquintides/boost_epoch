@@ -1,4 +1,3 @@
-# -*- coding: cp1252 -*-
 # Boost epoch proposal: Boost vs std components within non-C++03 Boost libs
 #
 # Copyright 2020 Joaquin M Lopez Munoz.
