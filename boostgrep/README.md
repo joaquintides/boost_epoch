@@ -7,14 +7,12 @@ Boost source code tree.
 ```
 usage: boostgrep.py [-h] [-b <path-to-boost>] [-v] [-f] <term> [<module>]
 positional arguments:
-  <term>                grepped term (regexp), strings outside pp directives
-                        and comments are not considered
+  <term>                grepped term (regexp), strings outside pp directives and comments are not considered
   <module>              restrict search to <module>
 optional arguments:
   -h, --help            show this help message and exit
   -b <path-to-boost>, --boost-root <path-to-boost>
-                        path to Boost (default uses BOOST_ROOT environment
-                        variable)
+                        path to Boost (default uses BOOST_ROOT environment variable)
   -v, --verbose         verbose mode
   -f, --first_only      show just the first match per module (in verbose mode)
 ```
