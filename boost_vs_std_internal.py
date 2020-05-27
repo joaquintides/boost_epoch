@@ -79,9 +79,12 @@ for module in non_cpp03_modules:
     column+=1
  
   for component,terms in cp11_components:
+    output=""
     for term in terms:
-      output="X" if grep_for(term,module) else ""
-      sys.stdout.write("|"+output.center(len(headers[column])))
+      if grep_for(term,module):
+        output="X"
+        break
+    sys.stdout.write("|"+output.center(len(headers[column])))
     column+=1
 
   sys.stdout.write("|\n")
