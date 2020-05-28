@@ -50,7 +50,7 @@ From these definitions, it follows that each epoch **BoostN** is a self-containe
 * span(**Boost.Optional**) = (**Boost03**, **Boost14**)
 * span(**Boost.Mp11**) = (**Boost11**, **Boost20**)
 * span(**Boost.MPL**) = (**Boost03**, **Boost03**) (superseded by **Boost.Mp11** in C++11, rejection rule 2)
-* span (**Boost.Parameter**) = (**Boost03**, **Boost14**), as it depends on **Boost.Optional**, no longer part of **Boost17**
+* span(**Boost.Parameter**) = (**Boost03**, **Boost14**), as it depends on **Boost.Optional**, no longer part of **Boost17**
 
 ## How does the scheme work
 
@@ -184,7 +184,7 @@ Boost epochs can be implemented in a number of incremental stages:
 
 ### Phase 0: `BOOST_ASSUME_CXX` support
 
-* Make `BOOST_ASSUME_CXX` the official mechanism for internal depedency tuning.
+* Make `BOOST_ASSUME_CXX` the official mechanism for internal dependency tuning.
 * Set up a page in boost.org explaning this.
 * Invite authors to use/move to `BOOST_ASSUME_CXX`.
 
