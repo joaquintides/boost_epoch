@@ -210,7 +210,7 @@ libraries.
 ## Supporting material
 
 * [Relevance of Boost libraries vs. standard equivalents](boost_vs_std.md)
-* [Internal relevance in post-C++03 Boost of Boost03 components vs. standard equivalents](boost_vs_std_internal.MD)
+* [Internal relevance in post-C++03 Boost of Boost03 components vs. standard equivalents](boost_vs_std_internal.md)
 * [Boost 1.73 legacy report](legacy_report.md)
 * [`boostcdep`: Boost conditional dependency calculator](boostcdep)
 
