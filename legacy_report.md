@@ -14,7 +14,7 @@ and `src` directories) each component adds to the total dependencies of the anal
 The last column is the sum of all previous contributions: so, "0%" means that the library does not
 have legacy dependencies and it therefore belongs to **Boost11**. Percentages are rounded up to unit.
 
-Out of 139 Boost libraries analyzed, 47 (34%) go to **Boost11**. The biggest offender in terms of
+Out of 138 Boost libraries analyzed, 46 (33%) go to **Boost11**. The biggest offender in terms of
 library blocking and added source code overhead is **Boost.MPL**.
 
 |                  |array|bind|function|lambda|mpl|smart_ptr|thread|tuple|legacy|
@@ -68,7 +68,6 @@ library blocking and added source code overhead is **Boost.MPL**.
 |graph             |  1% | 1% |   1%   |      | 7%|    1%   |  3%  |  1% |   11%|
 |graph_parallel    |  1% | 1% |   1%   |      | 7%|    1%   |  3%  |  1% |   11%|
 |hana              |     |    |        |      |18%|         |      |  1% |   18%|
-|headers           |     |    |        |      |   |         |      |     |    0%|
 |heap              |  1% | 1% |   1%   |      |16%|         |      |     |   18%|
 |histogram         |     |    |        |      |40%|    4%   |      |     |   43%|
 |hof               |     |    |        |      |   |         |      |     |    0%|
@@ -158,3 +157,4 @@ library blocking and added source code overhead is **Boost.MPL**.
 |winapi            |     |    |        |      |   |         |      |     |    0%|
 |xpressive         |  1% |    |        |      |11%|    1%   |      |     |   11%|
 |yap               |     |    |        |      |   |         |      |     |    0%|
+
