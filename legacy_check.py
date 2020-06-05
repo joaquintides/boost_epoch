@@ -10,6 +10,7 @@
 import argparse
 import math
 import os
+import re
 import sys
 
 def dir_size(path): #https://stackoverflow.com/a/1392549/213114
@@ -39,10 +40,10 @@ def module_size(module):
   return dir_size(os.path.join(module_path,"include"))+\
          dir_size(os.path.join(module_path,"src"))
 
-modules=filter(
-  lambda x: os.path.isdir(os.path.join(boost_root_libs,x)),
-  os.listdir(boost_root_libs))
-modules.remove("headers") # fake module
+libs_path=re.compile(r"^\s*path\s*=*\slibs/(\S*)\s*$")
+with open(os.path.join(boost_root,".gitmodules"),"r") as gitmodules:
+  modules=sorted({
+    m.group(1) for m in map(libs_path.match,gitmodules.readlines()) if m})
 module_sizes={module:module_size(module) for module in modules}
 
 first_column_width=max(map(len,modules))
