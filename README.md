@@ -190,8 +190,8 @@ Boost epochs can be implemented in a number of incremental stages:
 
 ### Phase 1: Epoch badges:
 
-* Create a tool for conditional dependency calculation. [`boostcdep`](boostcdep) is offered
-as a prototype of such tool.
+* Create a tool for conditional dependency calculation.
+[`boostcdmap`](https://github.com/joaquintides/boostcdmap) is offered as a prototype of such tool.
 * Assign 03-20 epoch badges to every Boost library. This work is divided in two tasks:
   * Determine which libraries are deemed as subsumed by the standard. This is the
   most controversial part of the project, and it probably should be made by some central
@@ -212,7 +212,7 @@ libraries.
 * [Relevance of Boost libraries vs. standard equivalents](boost_vs_std.md)
 * [Internal relevance in post-C++03 Boost of Boost03 components vs. standard equivalents](boost_vs_std_internal.md)
 * [Boost 1.73 legacy report](legacy_report.md)
-* [`boostcdep`: Boost conditional dependency calculator](boostcdep)
+* [Boost condicional dependency map](https://github.com/joaquintides/boostcdmap)
 
 ## Feedback
 
