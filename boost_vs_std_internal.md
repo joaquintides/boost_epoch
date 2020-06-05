@@ -1,6 +1,6 @@
 # Internal relevance in post-C++03 Boost of Boost03 components vs. standard equivalents
 
-Out of the 136 modules in Boost 1.73, 18 are for libraries that require C++11, or
+Out of the 138 modules in Boost 1.73, 18 are for libraries that require C++11, or
 in some cases higher, to work. We want to study how these libraries favor standard
 components vs. their **Boost03** counterparts.
 
