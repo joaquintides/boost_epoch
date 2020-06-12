@@ -13,7 +13,7 @@ results differ.
 
 From the core rejections contained in [`boostepochban.1.73.0.json`](epoch_report/boostepochban.1.73.0.json),
 the utility derives the rest of epoch assignments following the purely formal rules
-[described in the proposal](boost_epoch#definitions).
+[described in the proposal](README.md#definitions).
 
 ## Boost epochs
 
