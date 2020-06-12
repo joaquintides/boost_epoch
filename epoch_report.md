@@ -15,7 +15,7 @@ From the core rejections contained in [`boostepochban.1.73.0.json`](epoch_report
 the utility derives the rest of epoch assignments following the purely formal rules
 [described in the proposal](README.md#definitions).
 
-See also the [lax-mode version](#lax_epoch_report.md) of the report.
+See also the [lax-mode version](lax_epoch_report.md) of the report.
 
 ## Boost epochs
 
