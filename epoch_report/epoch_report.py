@@ -95,14 +95,26 @@ def assess(module):
   
 for module in modules: assess(module)
 
+modules_in_epoch=dict()
+for module in modules:
+  for epoch in epochs[module]:
+    modules_in_epoch.setdefault(epoch,[]).append(module)
+
+sys.stdout.write("## Boost epochs\n\n")
+for epoch in sorted(modules_in_epoch.keys()):
+  sys.stdout.write("### Boost{}\n\n".format(epoch))
+  sys.stdout.write(", ".join(markup(module) for module in modules_in_epoch[epoch]))
+  sys.stdout.write("\n\n")
+
 sys.stdout.write("## Boost modules\n\n")
 for module in modules:
   sys.stdout.write("### `{}`\n\n".format(module))
   sys.stdout.write("**Requires:**  \nC++{} or later  \n".format(
     min(cdmap[module].keys())))
   sys.stdout.write("**Epochs:**  \n{}  \n".format(
-    ", ".join("Boost{}".format(epoch) for epoch in epochs[module]) if epochs[module] else "None"))
+    ", ".join(markup("Boost{}".format(epoch)) for epoch in epochs[module]) if epochs[module] else "None"))
   if module in block:
     sys.stdout.write("**Why not in Boost{}:**  \n{}  \n".format(
       block[module]["epoch"],block[module]["reason"]))
   sys.stdout.write("\n")
+  
