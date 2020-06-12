@@ -6,7 +6,7 @@ an epoch assignment report based on these two inputs:
 dependency map for Boost generated with [`boostcdmap`](https://github.com/joaquintides/boostcdmap).
 * [`boostepochban.1.73.0.json`](epoch_report/boostepochban.1.73.0.json): a JSON file
 specifying which Boost libraries are explicitly rejected for epoch progression due to
-theor being subsumed by the C++ standard or more modern alternatives in Boost. Please note
+their being subsumed by the C++ standard or more modern alternatives in Boost. Please note
 that the rejections contained in this example file are in no way official and can be
 debated; you can run the report generation utility using your own rejection file to see how
 results differ.
