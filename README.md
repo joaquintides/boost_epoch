@@ -213,6 +213,7 @@ libraries.
 * [Internal relevance in post-C++03 Boost of Boost03 components vs. standard equivalents](boost_vs_std_internal.md)
 * [Boost 1.73 legacy report](legacy_report.md)
 * [Boost condicional dependency map](https://github.com/joaquintides/boostcdmap)
+* [Illustrative Boost 1.73 epoch report](epoch_report.md)
 
 ## Feedback
 
