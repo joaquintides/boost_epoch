@@ -1,3 +1,20 @@
+# Illustrative Boost 1.73 epoch report
+
+We have used [a utility](epoch_report/epoch_report.py) that automatically generates
+an epoch assignment report based on these two inputs:
+* [`boostcdmap.1.73.0.json`](epoch_report/boostcdmap.1.73.0.json): a conditional
+dependency map for Boost generated with [`boostcdmap`](https://github.com/joaquintides/boostcdmap).
+* [`boostepochban.1.73.0.json`](epoch_report/boostepochban.1.73.0.json): a JSON file
+specifying which Boost libraries are explicitly rejected for epoch progression due to
+theor being subsumed by the C++ standard or more modern alternatives in Boost. Please note
+that the rejections contained in this example file are in no way official and can be
+debated; you can run the report generation utility using your own rejection file to see how
+results differ.
+
+From the core rejections contained in [`boostepochban.1.73.0.json`](epoch_report/boostepochban.1.73.0.json),
+the utility derives the rest of epoch assignments following the purely formal rules
+[described in the proposal](boost_epoch#definitions).
+
 ## Boost epochs
 
 ### Boost03
