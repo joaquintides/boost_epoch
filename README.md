@@ -214,6 +214,7 @@ libraries.
 * [Boost 1.73 legacy report](legacy_report.md)
 * [Boost condicional dependency map](https://github.com/joaquintides/boostcdmap)
 * [Illustrative Boost 1.73 epoch report](epoch_report.md)
+* [Illustrative Boost 1.73 epoch report, lax mode](lax_epoch_report.md)
 
 ## Feedback
 
