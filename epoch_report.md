@@ -7,7 +7,7 @@ C++03 or later
 **Epochs:**  
 Boost03  
 **Why not in Boost11:**  
-Depends on [`array`](#array), [`fusion`](#fusion), [`iterator`](#iterator), [`mpl`](#mpl), [`numeric/conversion`](#numeric/conversion), [`numeric/ublas`](#numeric/ublas), [`parameter`](#parameter), [`range`](#range), [`serialization`](#serialization), [`smart_ptr`](#smart_ptr), [`tuple`](#tuple)  
+Depends on [`array`](#array), [`fusion`](#fusion), [`iterator`](#iterator), [`mpl`](#mpl), [`numeric/conversion`](#numericconversion), [`numeric/ublas`](#numericublas), [`parameter`](#parameter), [`range`](#range), [`serialization`](#serialization), [`smart_ptr`](#smart_ptr), [`tuple`](#tuple)  
 
 ### `algorithm`
 
@@ -50,7 +50,7 @@ C++03 or later
 **Epochs:**  
 Boost03  
 **Why not in Boost11:**  
-Depends on [`bind`](#bind), [`context`](#context), [`coroutine`](#coroutine), [`date_time`](#date_time), [`exception`](#exception), [`iterator`](#iterator), [`mpl`](#mpl), [`numeric/conversion`](#numeric/conversion), [`range`](#range), [`regex`](#regex), [`smart_ptr`](#smart_ptr)  
+Depends on [`bind`](#bind), [`context`](#context), [`coroutine`](#coroutine), [`date_time`](#date_time), [`exception`](#exception), [`iterator`](#iterator), [`mpl`](#mpl), [`numeric/conversion`](#numericconversion), [`range`](#range), [`regex`](#regex), [`smart_ptr`](#smart_ptr)  
 
 ### `assert`
 
@@ -82,7 +82,7 @@ C++11 or later
 **Epochs:**  
 None  
 **Why not in Boost11:**  
-Depends on [`asio`](#asio), [`bind`](#bind), [`date_time`](#date_time), [`mpl`](#mpl), [`numeric/conversion`](#numeric/conversion), [`smart_ptr`](#smart_ptr)  
+Depends on [`asio`](#asio), [`bind`](#bind), [`date_time`](#date_time), [`mpl`](#mpl), [`numeric/conversion`](#numericconversion), [`smart_ptr`](#smart_ptr)  
 
 ### `bimap`
 
@@ -139,7 +139,7 @@ C++03 or later
 **Epochs:**  
 Boost03  
 **Why not in Boost11:**  
-Depends on [`algorithm`](#algorithm), [`array`](#array), [`bind`](#bind), [`chrono`](#chrono), [`function`](#function), [`function_types`](#function_types), [`fusion`](#fusion), [`iterator`](#iterator), [`lexical_cast`](#lexical_cast), [`math`](#math), [`mpl`](#mpl), [`numeric/conversion`](#numeric/conversion), [`proto`](#proto), [`range`](#range), [`ratio`](#ratio), [`smart_ptr`](#smart_ptr), [`tuple`](#tuple), [`type_index`](#type_index), [`uuid`](#uuid)  
+Depends on [`algorithm`](#algorithm), [`array`](#array), [`bind`](#bind), [`chrono`](#chrono), [`function`](#function), [`function_types`](#function_types), [`fusion`](#fusion), [`iterator`](#iterator), [`lexical_cast`](#lexical_cast), [`math`](#math), [`mpl`](#mpl), [`numeric/conversion`](#numericconversion), [`proto`](#proto), [`range`](#range), [`ratio`](#ratio), [`smart_ptr`](#smart_ptr), [`tuple`](#tuple), [`type_index`](#type_index), [`uuid`](#uuid)  
 
 ### `concept_check`
 
@@ -185,7 +185,7 @@ C++11 or later
 **Epochs:**  
 None  
 **Why not in Boost11:**  
-Depends on [`any`](#any), [`bind`](#bind), [`chrono`](#chrono), [`date_time`](#date_time), [`exception`](#exception), [`function`](#function), [`function_types`](#function_types), [`mpl`](#mpl), [`numeric/conversion`](#numeric/conversion), [`ratio`](#ratio), [`smart_ptr`](#smart_ptr), [`thread`](#thread), [`type_index`](#type_index)  
+Depends on [`any`](#any), [`bind`](#bind), [`chrono`](#chrono), [`date_time`](#date_time), [`exception`](#exception), [`function`](#function), [`function_types`](#function_types), [`mpl`](#mpl), [`numeric/conversion`](#numericconversion), [`ratio`](#ratio), [`smart_ptr`](#smart_ptr), [`thread`](#thread), [`type_index`](#type_index)  
 
 ### `conversion`
 
@@ -203,7 +203,7 @@ C++03 or later
 **Epochs:**  
 Boost03  
 **Why not in Boost11:**  
-Depends on [`array`](#array), [`bind`](#bind), [`foreach`](#foreach), [`function`](#function), [`function_types`](#function_types), [`fusion`](#fusion), [`iostreams`](#iostreams), [`iterator`](#iterator), [`lexical_cast`](#lexical_cast), [`math`](#math), [`mpl`](#mpl), [`numeric/conversion`](#numeric/conversion), [`parameter`](#parameter), [`phoenix`](#phoenix), [`proto`](#proto), [`range`](#range), [`regex`](#regex), [`smart_ptr`](#smart_ptr), [`spirit`](#spirit), [`type_index`](#type_index), [`variant`](#variant)  
+Depends on [`array`](#array), [`bind`](#bind), [`foreach`](#foreach), [`function`](#function), [`function_types`](#function_types), [`fusion`](#fusion), [`iostreams`](#iostreams), [`iterator`](#iterator), [`lexical_cast`](#lexical_cast), [`math`](#math), [`mpl`](#mpl), [`numeric/conversion`](#numericconversion), [`parameter`](#parameter), [`phoenix`](#phoenix), [`proto`](#proto), [`range`](#range), [`regex`](#regex), [`smart_ptr`](#smart_ptr), [`spirit`](#spirit), [`type_index`](#type_index), [`variant`](#variant)  
 
 ### `core`
 
@@ -219,7 +219,7 @@ C++03 or later
 **Epochs:**  
 Boost03  
 **Why not in Boost11:**  
-Depends on [`algorithm`](#algorithm), [`array`](#array), [`bind`](#bind), [`chrono`](#chrono), [`context`](#context), [`date_time`](#date_time), [`exception`](#exception), [`function`](#function), [`iterator`](#iterator), [`lexical_cast`](#lexical_cast), [`math`](#math), [`mpl`](#mpl), [`numeric/conversion`](#numeric/conversion), [`range`](#range), [`ratio`](#ratio), [`smart_ptr`](#smart_ptr), [`thread`](#thread), [`tuple`](#tuple), [`type_index`](#type_index)  
+Depends on [`algorithm`](#algorithm), [`array`](#array), [`bind`](#bind), [`chrono`](#chrono), [`context`](#context), [`date_time`](#date_time), [`exception`](#exception), [`function`](#function), [`iterator`](#iterator), [`lexical_cast`](#lexical_cast), [`math`](#math), [`mpl`](#mpl), [`numeric/conversion`](#numericconversion), [`range`](#range), [`ratio`](#ratio), [`smart_ptr`](#smart_ptr), [`thread`](#thread), [`tuple`](#tuple), [`type_index`](#type_index)  
 
 ### `coroutine2`
 
@@ -246,7 +246,7 @@ C++03 or later
 **Epochs:**  
 Boost03  
 **Why not in Boost11:**  
-Depends on [`algorithm`](#algorithm), [`array`](#array), [`bind`](#bind), [`function`](#function), [`iterator`](#iterator), [`lexical_cast`](#lexical_cast), [`math`](#math), [`mpl`](#mpl), [`numeric/conversion`](#numeric/conversion), [`range`](#range), [`serialization`](#serialization), [`smart_ptr`](#smart_ptr), [`tokenizer`](#tokenizer), [`type_index`](#type_index)  
+Depends on [`algorithm`](#algorithm), [`array`](#array), [`bind`](#bind), [`function`](#function), [`iterator`](#iterator), [`lexical_cast`](#lexical_cast), [`math`](#math), [`mpl`](#mpl), [`numeric/conversion`](#numericconversion), [`range`](#range), [`serialization`](#serialization), [`smart_ptr`](#smart_ptr), [`tokenizer`](#tokenizer), [`type_index`](#type_index)  
 
 ### `detail`
 
@@ -312,7 +312,7 @@ C++03 or later
 **Epochs:**  
 Boost03  
 **Why not in Boost11:**  
-Depends on [`bind`](#bind), [`date_time`](#date_time), [`foreach`](#foreach), [`interprocess`](#interprocess), [`iterator`](#iterator), [`mpl`](#mpl), [`multi_index`](#multi_index), [`numeric/conversion`](#numeric/conversion), [`parameter`](#parameter), [`serialization`](#serialization), [`smart_ptr`](#smart_ptr), [`tuple`](#tuple)  
+Depends on [`bind`](#bind), [`date_time`](#date_time), [`foreach`](#foreach), [`interprocess`](#interprocess), [`iterator`](#iterator), [`mpl`](#mpl), [`multi_index`](#multi_index), [`numeric/conversion`](#numericconversion), [`parameter`](#parameter), [`serialization`](#serialization), [`smart_ptr`](#smart_ptr), [`tuple`](#tuple)  
 
 ### `foreach`
 
@@ -375,7 +375,7 @@ C++03 or later
 **Epochs:**  
 Boost03  
 **Why not in Boost11:**  
-Depends on [`algorithm`](#algorithm), [`array`](#array), [`bind`](#bind), [`chrono`](#chrono), [`date_time`](#date_time), [`exception`](#exception), [`function`](#function), [`function_types`](#function_types), [`fusion`](#fusion), [`iterator`](#iterator), [`lexical_cast`](#lexical_cast), [`math`](#math), [`mpl`](#mpl), [`numeric/conversion`](#numeric/conversion), [`qvm`](#qvm), [`range`](#range), [`ratio`](#ratio), [`smart_ptr`](#smart_ptr), [`thread`](#thread), [`tokenizer`](#tokenizer), [`tuple`](#tuple), [`type_index`](#type_index), [`variant`](#variant)  
+Depends on [`algorithm`](#algorithm), [`array`](#array), [`bind`](#bind), [`chrono`](#chrono), [`date_time`](#date_time), [`exception`](#exception), [`function`](#function), [`function_types`](#function_types), [`fusion`](#fusion), [`iterator`](#iterator), [`lexical_cast`](#lexical_cast), [`math`](#math), [`mpl`](#mpl), [`numeric/conversion`](#numericconversion), [`qvm`](#qvm), [`range`](#range), [`ratio`](#ratio), [`smart_ptr`](#smart_ptr), [`thread`](#thread), [`tokenizer`](#tokenizer), [`tuple`](#tuple), [`type_index`](#type_index), [`variant`](#variant)  
 
 ### `gil`
 
@@ -384,7 +384,7 @@ C++11 or later
 **Epochs:**  
 None  
 **Why not in Boost11:**  
-Depends on [`iterator`](#iterator), [`mpl`](#mpl), [`numeric/conversion`](#numeric/conversion), [`type_index`](#type_index), [`variant`](#variant)  
+Depends on [`iterator`](#iterator), [`mpl`](#mpl), [`numeric/conversion`](#numericconversion), [`type_index`](#type_index), [`variant`](#variant)  
 
 ### `graph`
 
@@ -393,7 +393,7 @@ C++03 or later
 **Epochs:**  
 Boost03  
 **Why not in Boost11:**  
-Depends on [`algorithm`](#algorithm), [`any`](#any), [`array`](#array), [`bimap`](#bimap), [`bind`](#bind), [`conversion`](#conversion), [`exception`](#exception), [`foreach`](#foreach), [`function`](#function), [`function_types`](#function_types), [`fusion`](#fusion), [`iterator`](#iterator), [`lexical_cast`](#lexical_cast), [`math`](#math), [`mpl`](#mpl), [`multi_index`](#multi_index), [`numeric/conversion`](#numeric/conversion), [`parameter`](#parameter), [`property_map`](#property_map), [`property_tree`](#property_tree), [`proto`](#proto), [`random`](#random), [`range`](#range), [`regex`](#regex), [`serialization`](#serialization), [`smart_ptr`](#smart_ptr), [`spirit`](#spirit), [`tti`](#tti), [`tuple`](#tuple), [`type_index`](#type_index), [`unordered`](#unordered), [`xpressive`](#xpressive)  
+Depends on [`algorithm`](#algorithm), [`any`](#any), [`array`](#array), [`bimap`](#bimap), [`bind`](#bind), [`conversion`](#conversion), [`exception`](#exception), [`foreach`](#foreach), [`function`](#function), [`function_types`](#function_types), [`fusion`](#fusion), [`iterator`](#iterator), [`lexical_cast`](#lexical_cast), [`math`](#math), [`mpl`](#mpl), [`multi_index`](#multi_index), [`numeric/conversion`](#numericconversion), [`parameter`](#parameter), [`property_map`](#property_map), [`property_tree`](#property_tree), [`proto`](#proto), [`random`](#random), [`range`](#range), [`regex`](#regex), [`serialization`](#serialization), [`smart_ptr`](#smart_ptr), [`spirit`](#spirit), [`tti`](#tti), [`tuple`](#tuple), [`type_index`](#type_index), [`unordered`](#unordered), [`xpressive`](#xpressive)  
 
 ### `graph_parallel`
 
@@ -402,7 +402,7 @@ C++03 or later
 **Epochs:**  
 Boost03  
 **Why not in Boost11:**  
-Depends on [`algorithm`](#algorithm), [`any`](#any), [`array`](#array), [`bind`](#bind), [`conversion`](#conversion), [`exception`](#exception), [`filesystem`](#filesystem), [`foreach`](#foreach), [`function`](#function), [`function_types`](#function_types), [`fusion`](#fusion), [`graph`](#graph), [`iterator`](#iterator), [`lexical_cast`](#lexical_cast), [`math`](#math), [`mpi`](#mpi), [`mpl`](#mpl), [`multi_index`](#multi_index), [`numeric/conversion`](#numeric/conversion), [`parameter`](#parameter), [`property_map`](#property_map), [`property_tree`](#property_tree), [`proto`](#proto), [`python`](#python), [`random`](#random), [`range`](#range), [`regex`](#regex), [`serialization`](#serialization), [`smart_ptr`](#smart_ptr), [`spirit`](#spirit), [`tti`](#tti), [`tuple`](#tuple), [`type_index`](#type_index), [`unordered`](#unordered), [`variant`](#variant), [`xpressive`](#xpressive)  
+Depends on [`algorithm`](#algorithm), [`any`](#any), [`array`](#array), [`bind`](#bind), [`conversion`](#conversion), [`exception`](#exception), [`filesystem`](#filesystem), [`foreach`](#foreach), [`function`](#function), [`function_types`](#function_types), [`fusion`](#fusion), [`graph`](#graph), [`iterator`](#iterator), [`lexical_cast`](#lexical_cast), [`math`](#math), [`mpi`](#mpi), [`mpl`](#mpl), [`multi_index`](#multi_index), [`numeric/conversion`](#numericconversion), [`parameter`](#parameter), [`property_map`](#property_map), [`property_tree`](#property_tree), [`proto`](#proto), [`python`](#python), [`random`](#random), [`range`](#range), [`regex`](#regex), [`serialization`](#serialization), [`smart_ptr`](#smart_ptr), [`spirit`](#spirit), [`tti`](#tti), [`tuple`](#tuple), [`type_index`](#type_index), [`unordered`](#unordered), [`variant`](#variant), [`xpressive`](#xpressive)  
 
 ### `hana`
 
@@ -445,7 +445,7 @@ C++03 or later
 **Epochs:**  
 Boost03  
 **Why not in Boost11:**  
-Depends on [`algorithm`](#algorithm), [`array`](#array), [`date_time`](#date_time), [`iterator`](#iterator), [`lexical_cast`](#lexical_cast), [`math`](#math), [`mpl`](#mpl), [`numeric/conversion`](#numeric/conversion), [`range`](#range), [`smart_ptr`](#smart_ptr), [`tokenizer`](#tokenizer)  
+Depends on [`algorithm`](#algorithm), [`array`](#array), [`date_time`](#date_time), [`iterator`](#iterator), [`lexical_cast`](#lexical_cast), [`math`](#math), [`mpl`](#mpl), [`numeric/conversion`](#numericconversion), [`range`](#range), [`smart_ptr`](#smart_ptr), [`tokenizer`](#tokenizer)  
 
 ### `integer`
 
@@ -461,7 +461,7 @@ C++03 or later
 **Epochs:**  
 Boost03  
 **Why not in Boost11:**  
-Depends on [`date_time`](#date_time), [`mpl`](#mpl), [`numeric/conversion`](#numeric/conversion), [`smart_ptr`](#smart_ptr), [`tuple`](#tuple), [`unordered`](#unordered)  
+Depends on [`date_time`](#date_time), [`mpl`](#mpl), [`numeric/conversion`](#numericconversion), [`smart_ptr`](#smart_ptr), [`tuple`](#tuple), [`unordered`](#unordered)  
 
 ### `intrusive`
 
@@ -484,7 +484,7 @@ C++03 or later
 **Epochs:**  
 Boost03  
 **Why not in Boost11:**  
-Depends on [`bind`](#bind), [`function`](#function), [`iterator`](#iterator), [`mpl`](#mpl), [`numeric/conversion`](#numeric/conversion), [`random`](#random), [`range`](#range), [`regex`](#regex), [`smart_ptr`](#smart_ptr), [`type_index`](#type_index)  
+Depends on [`bind`](#bind), [`function`](#function), [`iterator`](#iterator), [`mpl`](#mpl), [`numeric/conversion`](#numericconversion), [`random`](#random), [`range`](#range), [`regex`](#regex), [`smart_ptr`](#smart_ptr), [`type_index`](#type_index)  
 
 ### `iterator`
 
@@ -511,7 +511,7 @@ C++03 or later
 **Epochs:**  
 Boost03  
 **Why not in Boost11:**  
-Depends on [`array`](#array), [`iterator`](#iterator), [`math`](#math), [`mpl`](#mpl), [`numeric/conversion`](#numeric/conversion), [`range`](#range)  
+Depends on [`array`](#array), [`iterator`](#iterator), [`math`](#math), [`mpl`](#mpl), [`numeric/conversion`](#numericconversion), [`range`](#range)  
 
 ### `local_function`
 
@@ -529,7 +529,7 @@ C++03 or later
 **Epochs:**  
 Boost03  
 **Why not in Boost11:**  
-Depends on [`algorithm`](#algorithm), [`array`](#array), [`bind`](#bind), [`chrono`](#chrono), [`date_time`](#date_time), [`exception`](#exception), [`function`](#function), [`iterator`](#iterator), [`lexical_cast`](#lexical_cast), [`math`](#math), [`mpl`](#mpl), [`numeric/conversion`](#numeric/conversion), [`range`](#range), [`ratio`](#ratio), [`smart_ptr`](#smart_ptr), [`thread`](#thread), [`tuple`](#tuple), [`type_index`](#type_index), [`unordered`](#unordered)  
+Depends on [`algorithm`](#algorithm), [`array`](#array), [`bind`](#bind), [`chrono`](#chrono), [`date_time`](#date_time), [`exception`](#exception), [`function`](#function), [`iterator`](#iterator), [`lexical_cast`](#lexical_cast), [`math`](#math), [`mpl`](#mpl), [`numeric/conversion`](#numericconversion), [`range`](#range), [`ratio`](#ratio), [`smart_ptr`](#smart_ptr), [`thread`](#thread), [`tuple`](#tuple), [`type_index`](#type_index), [`unordered`](#unordered)  
 
 ### `lockfree`
 
@@ -547,7 +547,7 @@ C++03 or later
 **Epochs:**  
 Boost03  
 **Why not in Boost11:**  
-Depends on [`algorithm`](#algorithm), [`any`](#any), [`array`](#array), [`asio`](#asio), [`bind`](#bind), [`chrono`](#chrono), [`conversion`](#conversion), [`date_time`](#date_time), [`exception`](#exception), [`filesystem`](#filesystem), [`foreach`](#foreach), [`function`](#function), [`function_types`](#function_types), [`fusion`](#fusion), [`interprocess`](#interprocess), [`iterator`](#iterator), [`lexical_cast`](#lexical_cast), [`locale`](#locale), [`math`](#math), [`mpl`](#mpl), [`multi_index`](#multi_index), [`numeric/conversion`](#numeric/conversion), [`parameter`](#parameter), [`phoenix`](#phoenix), [`property_tree`](#property_tree), [`proto`](#proto), [`random`](#random), [`range`](#range), [`ratio`](#ratio), [`regex`](#regex), [`serialization`](#serialization), [`smart_ptr`](#smart_ptr), [`spirit`](#spirit), [`thread`](#thread), [`tokenizer`](#tokenizer), [`tuple`](#tuple), [`type_index`](#type_index), [`unordered`](#unordered), [`variant`](#variant), [`xpressive`](#xpressive)  
+Depends on [`algorithm`](#algorithm), [`any`](#any), [`array`](#array), [`asio`](#asio), [`bind`](#bind), [`chrono`](#chrono), [`conversion`](#conversion), [`date_time`](#date_time), [`exception`](#exception), [`filesystem`](#filesystem), [`foreach`](#foreach), [`function`](#function), [`function_types`](#function_types), [`fusion`](#fusion), [`interprocess`](#interprocess), [`iterator`](#iterator), [`lexical_cast`](#lexical_cast), [`locale`](#locale), [`math`](#math), [`mpl`](#mpl), [`multi_index`](#multi_index), [`numeric/conversion`](#numericconversion), [`parameter`](#parameter), [`phoenix`](#phoenix), [`property_tree`](#property_tree), [`proto`](#proto), [`random`](#random), [`range`](#range), [`ratio`](#ratio), [`regex`](#regex), [`serialization`](#serialization), [`smart_ptr`](#smart_ptr), [`spirit`](#spirit), [`thread`](#thread), [`tokenizer`](#tokenizer), [`tuple`](#tuple), [`type_index`](#type_index), [`unordered`](#unordered), [`variant`](#variant), [`xpressive`](#xpressive)  
 
 ### `logic`
 
@@ -563,7 +563,7 @@ C++03 or later
 **Epochs:**  
 Boost03  
 **Why not in Boost11:**  
-Depends on [`array`](#array), [`iterator`](#iterator), [`lexical_cast`](#lexical_cast), [`mpl`](#mpl), [`numeric/conversion`](#numeric/conversion), [`range`](#range), [`smart_ptr`](#smart_ptr)  
+Depends on [`array`](#array), [`iterator`](#iterator), [`lexical_cast`](#lexical_cast), [`mpl`](#mpl), [`numeric/conversion`](#numericconversion), [`range`](#range), [`smart_ptr`](#smart_ptr)  
 
 ### `metaparse`
 
@@ -595,7 +595,7 @@ C++03 or later
 **Epochs:**  
 Boost03  
 **Why not in Boost11:**  
-Depends on [`algorithm`](#algorithm), [`any`](#any), [`array`](#array), [`bind`](#bind), [`conversion`](#conversion), [`exception`](#exception), [`foreach`](#foreach), [`function`](#function), [`fusion`](#fusion), [`graph`](#graph), [`iterator`](#iterator), [`lexical_cast`](#lexical_cast), [`math`](#math), [`mpl`](#mpl), [`multi_index`](#multi_index), [`numeric/conversion`](#numeric/conversion), [`parameter`](#parameter), [`property_map`](#property_map), [`property_tree`](#property_tree), [`proto`](#proto), [`python`](#python), [`range`](#range), [`regex`](#regex), [`serialization`](#serialization), [`smart_ptr`](#smart_ptr), [`spirit`](#spirit), [`tuple`](#tuple), [`type_index`](#type_index), [`unordered`](#unordered), [`xpressive`](#xpressive)  
+Depends on [`algorithm`](#algorithm), [`any`](#any), [`array`](#array), [`bind`](#bind), [`conversion`](#conversion), [`exception`](#exception), [`foreach`](#foreach), [`function`](#function), [`fusion`](#fusion), [`graph`](#graph), [`iterator`](#iterator), [`lexical_cast`](#lexical_cast), [`math`](#math), [`mpl`](#mpl), [`multi_index`](#multi_index), [`numeric/conversion`](#numericconversion), [`parameter`](#parameter), [`property_map`](#property_map), [`property_tree`](#property_tree), [`proto`](#proto), [`python`](#python), [`range`](#range), [`regex`](#regex), [`serialization`](#serialization), [`smart_ptr`](#smart_ptr), [`spirit`](#spirit), [`tuple`](#tuple), [`type_index`](#type_index), [`unordered`](#unordered), [`xpressive`](#xpressive)  
 
 ### `mpl`
 
@@ -640,7 +640,7 @@ C++03 or later
 **Epochs:**  
 Boost03  
 **Why not in Boost11:**  
-Depends on [`array`](#array), [`iterator`](#iterator), [`lexical_cast`](#lexical_cast), [`math`](#math), [`mpl`](#mpl), [`numeric/conversion`](#numeric/conversion), [`random`](#random), [`range`](#range), [`smart_ptr`](#smart_ptr)  
+Depends on [`array`](#array), [`iterator`](#iterator), [`lexical_cast`](#lexical_cast), [`math`](#math), [`mpl`](#mpl), [`numeric/conversion`](#numericconversion), [`random`](#random), [`range`](#range), [`smart_ptr`](#smart_ptr)  
 
 ### `nowide`
 
@@ -674,7 +674,7 @@ C++03 or later
 **Epochs:**  
 Boost03  
 **Why not in Boost11:**  
-Depends on [`algorithm`](#algorithm), [`array`](#array), [`bind`](#bind), [`chrono`](#chrono), [`compute`](#compute), [`function`](#function), [`function_types`](#function_types), [`functional`](#functional), [`fusion`](#fusion), [`graph`](#graph), [`iterator`](#iterator), [`lexical_cast`](#lexical_cast), [`math`](#math), [`mpi`](#mpi), [`mpl`](#mpl), [`multi_array`](#multi_array), [`numeric/conversion`](#numeric/conversion), [`numeric/ublas`](#numeric/ublas), [`property_map`](#property_map), [`proto`](#proto), [`range`](#range), [`ratio`](#ratio), [`serialization`](#serialization), [`smart_ptr`](#smart_ptr), [`tuple`](#tuple), [`type_index`](#type_index), [`units`](#units), [`uuid`](#uuid)  
+Depends on [`algorithm`](#algorithm), [`array`](#array), [`bind`](#bind), [`chrono`](#chrono), [`compute`](#compute), [`function`](#function), [`function_types`](#function_types), [`functional`](#functional), [`fusion`](#fusion), [`graph`](#graph), [`iterator`](#iterator), [`lexical_cast`](#lexical_cast), [`math`](#math), [`mpi`](#mpi), [`mpl`](#mpl), [`multi_array`](#multi_array), [`numeric/conversion`](#numericconversion), [`numeric/ublas`](#numericublas), [`property_map`](#property_map), [`proto`](#proto), [`range`](#range), [`ratio`](#ratio), [`serialization`](#serialization), [`smart_ptr`](#smart_ptr), [`tuple`](#tuple), [`type_index`](#type_index), [`units`](#units), [`uuid`](#uuid)  
 
 ### `numeric/ublas`
 
@@ -683,7 +683,7 @@ C++03 or later
 **Epochs:**  
 Boost03  
 **Why not in Boost11:**  
-Depends on [`algorithm`](#algorithm), [`array`](#array), [`bind`](#bind), [`chrono`](#chrono), [`compute`](#compute), [`function`](#function), [`function_types`](#function_types), [`fusion`](#fusion), [`iterator`](#iterator), [`lexical_cast`](#lexical_cast), [`math`](#math), [`mpl`](#mpl), [`numeric/conversion`](#numeric/conversion), [`proto`](#proto), [`range`](#range), [`ratio`](#ratio), [`serialization`](#serialization), [`smart_ptr`](#smart_ptr), [`tuple`](#tuple), [`type_index`](#type_index), [`uuid`](#uuid)  
+Depends on [`algorithm`](#algorithm), [`array`](#array), [`bind`](#bind), [`chrono`](#chrono), [`compute`](#compute), [`function`](#function), [`function_types`](#function_types), [`fusion`](#fusion), [`iterator`](#iterator), [`lexical_cast`](#lexical_cast), [`math`](#math), [`mpl`](#mpl), [`numeric/conversion`](#numericconversion), [`proto`](#proto), [`range`](#range), [`ratio`](#ratio), [`serialization`](#serialization), [`smart_ptr`](#smart_ptr), [`tuple`](#tuple), [`type_index`](#type_index), [`uuid`](#uuid)  
 
 ### `optional`
 
@@ -783,7 +783,7 @@ C++03 or later
 **Epochs:**  
 Boost03  
 **Why not in Boost11:**  
-Depends on [`any`](#any), [`array`](#array), [`bind`](#bind), [`function`](#function), [`iterator`](#iterator), [`lexical_cast`](#lexical_cast), [`math`](#math), [`mpl`](#mpl), [`numeric/conversion`](#numeric/conversion), [`range`](#range), [`smart_ptr`](#smart_ptr), [`tokenizer`](#tokenizer), [`type_index`](#type_index)  
+Depends on [`any`](#any), [`array`](#array), [`bind`](#bind), [`function`](#function), [`iterator`](#iterator), [`lexical_cast`](#lexical_cast), [`math`](#math), [`mpl`](#mpl), [`numeric/conversion`](#numericconversion), [`range`](#range), [`smart_ptr`](#smart_ptr), [`tokenizer`](#tokenizer), [`type_index`](#type_index)  
 
 ### `property_map`
 
@@ -792,7 +792,7 @@ C++03 or later
 **Epochs:**  
 Boost03  
 **Why not in Boost11:**  
-Depends on [`any`](#any), [`array`](#array), [`bind`](#bind), [`foreach`](#foreach), [`function`](#function), [`iterator`](#iterator), [`lexical_cast`](#lexical_cast), [`math`](#math), [`mpi`](#mpi), [`mpl`](#mpl), [`multi_index`](#multi_index), [`numeric/conversion`](#numeric/conversion), [`range`](#range), [`serialization`](#serialization), [`smart_ptr`](#smart_ptr), [`tuple`](#tuple), [`type_index`](#type_index)  
+Depends on [`any`](#any), [`array`](#array), [`bind`](#bind), [`foreach`](#foreach), [`function`](#function), [`iterator`](#iterator), [`lexical_cast`](#lexical_cast), [`math`](#math), [`mpi`](#mpi), [`mpl`](#mpl), [`multi_index`](#multi_index), [`numeric/conversion`](#numericconversion), [`range`](#range), [`serialization`](#serialization), [`smart_ptr`](#smart_ptr), [`tuple`](#tuple), [`type_index`](#type_index)  
 
 ### `property_tree`
 
@@ -828,7 +828,7 @@ C++03 or later
 **Epochs:**  
 Boost03  
 **Why not in Boost11:**  
-Depends on [`algorithm`](#algorithm), [`any`](#any), [`array`](#array), [`bind`](#bind), [`conversion`](#conversion), [`exception`](#exception), [`foreach`](#foreach), [`function`](#function), [`fusion`](#fusion), [`graph`](#graph), [`iterator`](#iterator), [`lexical_cast`](#lexical_cast), [`math`](#math), [`mpl`](#mpl), [`multi_index`](#multi_index), [`numeric/conversion`](#numeric/conversion), [`parameter`](#parameter), [`property_map`](#property_map), [`property_tree`](#property_tree), [`proto`](#proto), [`range`](#range), [`regex`](#regex), [`serialization`](#serialization), [`smart_ptr`](#smart_ptr), [`spirit`](#spirit), [`tuple`](#tuple), [`type_index`](#type_index), [`unordered`](#unordered), [`xpressive`](#xpressive)  
+Depends on [`algorithm`](#algorithm), [`any`](#any), [`array`](#array), [`bind`](#bind), [`conversion`](#conversion), [`exception`](#exception), [`foreach`](#foreach), [`function`](#function), [`fusion`](#fusion), [`graph`](#graph), [`iterator`](#iterator), [`lexical_cast`](#lexical_cast), [`math`](#math), [`mpl`](#mpl), [`multi_index`](#multi_index), [`numeric/conversion`](#numericconversion), [`parameter`](#parameter), [`property_map`](#property_map), [`property_tree`](#property_tree), [`proto`](#proto), [`range`](#range), [`regex`](#regex), [`serialization`](#serialization), [`smart_ptr`](#smart_ptr), [`spirit`](#spirit), [`tuple`](#tuple), [`type_index`](#type_index), [`unordered`](#unordered), [`xpressive`](#xpressive)  
 
 ### `qvm`
 
@@ -846,7 +846,7 @@ C++03 or later
 **Epochs:**  
 Boost03  
 **Why not in Boost11:**  
-Depends on [`array`](#array), [`iterator`](#iterator), [`lexical_cast`](#lexical_cast), [`math`](#math), [`mpl`](#mpl), [`multiprecision`](#multiprecision), [`numeric/conversion`](#numeric/conversion), [`range`](#range)  
+Depends on [`array`](#array), [`iterator`](#iterator), [`lexical_cast`](#lexical_cast), [`math`](#math), [`mpl`](#mpl), [`multiprecision`](#multiprecision), [`numeric/conversion`](#numericconversion), [`range`](#range)  
 
 ### `range`
 
@@ -855,7 +855,7 @@ C++03 or later
 **Epochs:**  
 Boost03  
 **Why not in Boost11:**  
-Depends on [`array`](#array), [`conversion`](#conversion), [`fusion`](#fusion), [`iterator`](#iterator), [`mpl`](#mpl), [`numeric/conversion`](#numeric/conversion), [`regex`](#regex), [`smart_ptr`](#smart_ptr), [`tuple`](#tuple)  
+Depends on [`array`](#array), [`conversion`](#conversion), [`fusion`](#fusion), [`iterator`](#iterator), [`mpl`](#mpl), [`numeric/conversion`](#numericconversion), [`regex`](#regex), [`smart_ptr`](#smart_ptr), [`tuple`](#tuple)  
 
 ### `ratio`
 
@@ -941,7 +941,7 @@ C++03 or later
 **Epochs:**  
 Boost03  
 **Why not in Boost11:**  
-Depends on [`array`](#array), [`bind`](#bind), [`chrono`](#chrono), [`date_time`](#date_time), [`filesystem`](#filesystem), [`foreach`](#foreach), [`function`](#function), [`function_types`](#function_types), [`fusion`](#fusion), [`iostreams`](#iostreams), [`iterator`](#iterator), [`locale`](#locale), [`math`](#math), [`mpl`](#mpl), [`numeric/conversion`](#numeric/conversion), [`phoenix`](#phoenix), [`proto`](#proto), [`range`](#range), [`ratio`](#ratio), [`regex`](#regex), [`smart_ptr`](#smart_ptr), [`thread`](#thread), [`tuple`](#tuple), [`type_index`](#type_index), [`unordered`](#unordered), [`variant`](#variant)  
+Depends on [`array`](#array), [`bind`](#bind), [`chrono`](#chrono), [`date_time`](#date_time), [`filesystem`](#filesystem), [`foreach`](#foreach), [`function`](#function), [`function_types`](#function_types), [`fusion`](#fusion), [`iostreams`](#iostreams), [`iterator`](#iterator), [`locale`](#locale), [`math`](#math), [`mpl`](#mpl), [`numeric/conversion`](#numericconversion), [`phoenix`](#phoenix), [`proto`](#proto), [`range`](#range), [`ratio`](#ratio), [`regex`](#regex), [`smart_ptr`](#smart_ptr), [`thread`](#thread), [`tuple`](#tuple), [`type_index`](#type_index), [`unordered`](#unordered), [`variant`](#variant)  
 
 ### `stacktrace`
 
@@ -959,7 +959,7 @@ C++03 or later
 **Epochs:**  
 Boost03  
 **Why not in Boost11:**  
-Depends on [`bind`](#bind), [`chrono`](#chrono), [`conversion`](#conversion), [`date_time`](#date_time), [`function`](#function), [`mpl`](#mpl), [`numeric/conversion`](#numeric/conversion), [`ratio`](#ratio), [`smart_ptr`](#smart_ptr), [`thread`](#thread), [`type_index`](#type_index)  
+Depends on [`bind`](#bind), [`chrono`](#chrono), [`conversion`](#conversion), [`date_time`](#date_time), [`function`](#function), [`mpl`](#mpl), [`numeric/conversion`](#numericconversion), [`ratio`](#ratio), [`smart_ptr`](#smart_ptr), [`thread`](#thread), [`type_index`](#type_index)  
 
 ### `static_assert`
 
@@ -989,7 +989,7 @@ C++03 or later
 **Epochs:**  
 Boost03  
 **Why not in Boost11:**  
-Depends on [`algorithm`](#algorithm), [`bind`](#bind), [`exception`](#exception), [`function`](#function), [`iterator`](#iterator), [`mpl`](#mpl), [`numeric/conversion`](#numeric/conversion), [`range`](#range), [`smart_ptr`](#smart_ptr), [`type_index`](#type_index)  
+Depends on [`algorithm`](#algorithm), [`bind`](#bind), [`exception`](#exception), [`function`](#function), [`iterator`](#iterator), [`mpl`](#mpl), [`numeric/conversion`](#numericconversion), [`range`](#range), [`smart_ptr`](#smart_ptr), [`type_index`](#type_index)  
 
 ### `thread`
 
@@ -1050,7 +1050,7 @@ C++03 or later
 **Epochs:**  
 Boost03  
 **Why not in Boost11:**  
-Depends on [`algorithm`](#algorithm), [`array`](#array), [`bind`](#bind), [`chrono`](#chrono), [`date_time`](#date_time), [`exception`](#exception), [`function`](#function), [`fusion`](#fusion), [`iterator`](#iterator), [`lexical_cast`](#lexical_cast), [`math`](#math), [`mpl`](#mpl), [`numeric/conversion`](#numeric/conversion), [`range`](#range), [`ratio`](#ratio), [`smart_ptr`](#smart_ptr), [`thread`](#thread), [`tuple`](#tuple), [`type_index`](#type_index)  
+Depends on [`algorithm`](#algorithm), [`array`](#array), [`bind`](#bind), [`chrono`](#chrono), [`date_time`](#date_time), [`exception`](#exception), [`function`](#function), [`fusion`](#fusion), [`iterator`](#iterator), [`lexical_cast`](#lexical_cast), [`math`](#math), [`mpl`](#mpl), [`numeric/conversion`](#numericconversion), [`range`](#range), [`ratio`](#ratio), [`smart_ptr`](#smart_ptr), [`thread`](#thread), [`tuple`](#tuple), [`type_index`](#type_index)  
 
 ### `type_index`
 
@@ -1107,7 +1107,7 @@ C++03 or later
 **Epochs:**  
 Boost03  
 **Why not in Boost11:**  
-Depends on [`conversion`](#conversion), [`function_types`](#function_types), [`mpl`](#mpl), [`numeric/conversion`](#numeric/conversion), [`random`](#random), [`serialization`](#serialization), [`tti`](#tti)  
+Depends on [`conversion`](#conversion), [`function_types`](#function_types), [`mpl`](#mpl), [`numeric/conversion`](#numericconversion), [`random`](#random), [`serialization`](#serialization), [`tti`](#tti)  
 
 ### `variant`
 
@@ -1139,7 +1139,7 @@ C++03 or later
 **Epochs:**  
 Boost03  
 **Why not in Boost11:**  
-Depends on [`algorithm`](#algorithm), [`array`](#array), [`bind`](#bind), [`chrono`](#chrono), [`date_time`](#date_time), [`exception`](#exception), [`filesystem`](#filesystem), [`foreach`](#foreach), [`function`](#function), [`iterator`](#iterator), [`lexical_cast`](#lexical_cast), [`math`](#math), [`mpl`](#mpl), [`multi_index`](#multi_index), [`numeric/conversion`](#numeric/conversion), [`range`](#range), [`ratio`](#ratio), [`serialization`](#serialization), [`smart_ptr`](#smart_ptr), [`spirit`](#spirit), [`thread`](#thread), [`tuple`](#tuple), [`type_index`](#type_index)  
+Depends on [`algorithm`](#algorithm), [`array`](#array), [`bind`](#bind), [`chrono`](#chrono), [`date_time`](#date_time), [`exception`](#exception), [`filesystem`](#filesystem), [`foreach`](#foreach), [`function`](#function), [`iterator`](#iterator), [`lexical_cast`](#lexical_cast), [`math`](#math), [`mpl`](#mpl), [`multi_index`](#multi_index), [`numeric/conversion`](#numericconversion), [`range`](#range), [`ratio`](#ratio), [`serialization`](#serialization), [`smart_ptr`](#smart_ptr), [`spirit`](#spirit), [`thread`](#thread), [`tuple`](#tuple), [`type_index`](#type_index)  
 
 ### `winapi`
 
@@ -1155,7 +1155,7 @@ C++03 or later
 **Epochs:**  
 Boost03  
 **Why not in Boost11:**  
-Depends on [`array`](#array), [`conversion`](#conversion), [`exception`](#exception), [`function_types`](#function_types), [`fusion`](#fusion), [`iterator`](#iterator), [`lexical_cast`](#lexical_cast), [`math`](#math), [`mpl`](#mpl), [`numeric/conversion`](#numeric/conversion), [`proto`](#proto), [`range`](#range), [`smart_ptr`](#smart_ptr)  
+Depends on [`array`](#array), [`conversion`](#conversion), [`exception`](#exception), [`function_types`](#function_types), [`fusion`](#fusion), [`iterator`](#iterator), [`lexical_cast`](#lexical_cast), [`math`](#math), [`mpl`](#mpl), [`numeric/conversion`](#numericconversion), [`proto`](#proto), [`range`](#range), [`smart_ptr`](#smart_ptr)  
 
 ### `yap`
 
