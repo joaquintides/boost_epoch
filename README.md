@@ -196,7 +196,8 @@ Boost epochs can be implemented in a number of incremental stages:
   * Determine which libraries are deemed as subsumed by the standard. This is the
   most controversial part of the project, and it probably should be made by some central
   authority like the Boost Steering Committee.
-  * Assign epoch badges automatically to the rest, based on conditional dependency calculation.
+  * Assign epoch badges automatically to the rest, based on conditional dependency calculation. We
+  show [an example](epoch_report.md) of how this stage could be implemented.
 * Make epoch badges visible in Boost documentation (for instance, as attributes in
   the [Boost directory](https://www.boost.org/doc/libs/)).
   
