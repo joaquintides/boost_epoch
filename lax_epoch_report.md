@@ -1,5 +1,11 @@
 # Illustrative Boost 1.73 epoch report, lax mode
 
+This is an example of a Boost epoch assignment report using the lax-mode epoch membership rules.
+Compared with its [strict counterpart](epoch_report), this allows more libraries into
+higher epochs: to give just one example, [**Boost.QVM**](#qvm) belongs here in all epochs from
+[**Boost03**](#boost03) to [**Boost20**](#boost20), whereas in strict mode it only belongs
+in [**Boost03**](#boost03) due to its dependency from [**Boost.Exception**](#exception).
+
 ## Boost epochs
 
 ### Boost03
