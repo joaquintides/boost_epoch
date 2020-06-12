@@ -39,7 +39,7 @@ epochs={module:None for module in modules}
 block=dict()
 assessment_done={module:False for module in modules}
 
-def markup(module): return "[`{}`](`{}`)".format(module,module.replace(" ","-"))
+def markup(module): return "[`{}`](#{})".format(module,module.replace(" ","-"))
 
 def assess_dependencies(module,epoch,cyclic_deps):
   for dep in sorted(set(cdmap[module][epoch])-cyclic_deps):
