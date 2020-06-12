@@ -1,0 +1,42 @@
+{
+  "any": {
+    "epoch": "17", 
+    "reason": "Subsumed by `std::any`"
+  }, 
+  "array": {
+    "epoch": "11", 
+    "reason": "Subsumed by `std::array`"
+  }, 
+  "bind": {
+    "epoch": "11", 
+    "reason": "Subsumed by `std::bind`"
+  }, 
+  "function": {
+    "epoch": "11", 
+    "reason": "Subsumed by `std::function`"
+  }, 
+  "lambda": {
+    "epoch": "11", 
+    "reason": "Subsumed by C+11 lambda expressions"
+  }, 
+  "mpl": {
+    "epoch": "11", 
+    "reason": "Subsumed by [`mp11`](`mp11`)"
+  }, 
+  "optional": {
+    "epoch": "17", 
+    "reason": "Subsumed by `std::optional`"
+  }, 
+  "smart_ptr": {
+    "epoch": "11", 
+    "reason": "Subsumed by C++11 smart pointer facilities"
+  }, 
+  "thread": {
+    "epoch": "11", 
+    "reason": "Subsumed by `std::thread`"
+  }, 
+  "tuple": {
+    "epoch": "11", 
+    "reason": "Subsumed by `std::tuple`"
+  }
+}
