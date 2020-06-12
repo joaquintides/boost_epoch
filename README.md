@@ -6,6 +6,7 @@
 * [Goals](#goals)
 * [Definitions](#definitions)
 * [How does the scheme work](#how-does-the-scheme-work)
+* [Strict vs. lax mode](#strict-vs-lax-mode)
 * [FAQ](#faq)
 * [Work plan](#work-plan)
 * [Supporting material](#supporting-material)
@@ -89,6 +90,39 @@ B2 should be made `BOOST_ASSUME_CXX` aware. Note that binary redistributables de
 #### Package managers
 
 Boost does not feature its own package manager, but some external tools (vg. vcpkg) do have a notion of internal dependencies between Boost libraries. It remains to be studied how epoch management can be fitted here.
+
+## Strict vs. lax mode
+
+The definitions for epoch membership can be relaxed in a way that may be worth exploring.
+The original formulation, that we can call *strict mode*, blocks a library **X** from epoch progression
+if **X** depends on explicitly rejected libraries or on any other library **Y** which in its turn
+transitively depends on rejected libraries. Now, consider the case of **Boost.QVM**:
+
+* **Boost.QVM** depends (across all epochs) on: **Boost.Assert**, **Boost.Config**, **Boost.Core**, **Boost.Exception**, **Boost.StaticAssert**, **Boost.ThrowException**.
+* **Boost.Exception** depends on: **Boost.SmartPtr**, **Boost.Tuple**, and others.
+
+Due to its dependency on **Boost.SmartPt** and **Boost.Tuple**, **Boost.Exception** is banned from
+**Boost11**, which, under strict-mode rules, implies that **Boost.QVM** is also blocked. But note
+that, actually, **Boost.QVM** does *not* depend on either  **Boost.SmartPt** or **Boost.Tuple**:
+as it happens, the particular **Boost.Exception** headers included from **Boost.QVM** are free of these dependencies
+(that is, they are to be found in some other **Boost.Exception** headers that **Boost.QVM** does not include).
+Put another way, if we remove **Boost.SmartPt** or **Boost.Tuple** from a local Boost installation,
+**Boost.QVM** will continue to be fully functional (not so **Boost.Exception**, of course).
+This motivates the introduction of a variation of epoch membership rules that we can dub *lax mode*
+
+* _(Lax mode)_ A Boost library **X** belongs to epoch **BoostN** if:
+  * **X** is compatible with C++**N**,
+  * **(rejection rule 1)** the functionality provided by **X** is not already covered by C++**N**,
+  * **(rejection rule 2)** the functionality provided by **X** is not superseded by some other, more modern, library **Y** in 
+**BoostN**,
+  * _No library in depN(**X**) is rejected by the rules above._
+
+In general, more libraries are allowed into higher epochs with lax-mode rules than in strict mode.
+This can be seen comparing the following examples:
+* [Illustrative Boost 1.73 epoch report, strict mode](epoch_report.md)
+* [Illustrative Boost 1.73 epoch report, lax mode](lax_epoch_report.md)
+
+The question remains open of determinig which mode serves better the [epoch proposal goals](#goals).
 
 ## FAQ
 
