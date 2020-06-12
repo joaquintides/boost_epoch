@@ -122,7 +122,7 @@ This can be seen comparing the following examples:
 * [Illustrative Boost 1.73 epoch report, strict mode](epoch_report.md)
 * [Illustrative Boost 1.73 epoch report, lax mode](lax_epoch_report.md)
 
-The question remains open of determinig which mode serves better the [epoch proposal goals](#goals).
+The question remains open of determining which mode serves better the [epoch proposal goals](#goals).
 
 ## FAQ
 
