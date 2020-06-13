@@ -66,7 +66,8 @@ for module in modules:
   report_filename="temp.txt"
   if os.system(
     "boostdep --boost-root \""+boost_root+
-    "\" --subset "+module.replace("/","~")+" >"+report_filename):
+    "\" --track-sources --subset "+module.replace("/","~")+
+    " >"+report_filename):
     break
   report_file=open(report_filename,"r")
   report=report_file.read()

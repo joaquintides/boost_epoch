@@ -14,7 +14,7 @@ and `src` directories) each component adds to the total dependencies of the anal
 The last column is the sum of all previous contributions: so, "0%" means that the library does not
 have legacy dependencies and it therefore belongs to **Boost11**. Percentages are rounded up to unit.
 
-Out of 138 Boost libraries analyzed, 43 (31%) go to **Boost11**. The biggest offender in terms of
+Out of 138 Boost libraries analyzed, 41 (30%) go to **Boost11**. The biggest offender in terms of
 library blocking and added source code overhead is **Boost.MPL**.
 
 |                  |array|bind|function|lambda|mpl|smart_ptr|thread|tuple|legacy|
@@ -35,17 +35,17 @@ library blocking and added source code overhead is **Boost.MPL**.
 |chrono            |     |    |        |      |29%|         |      |     |   29%|
 |circular_buffer   |     |    |        |      |   |         |      |     |    0%|
 |compatibility     |     |    |        |      |   |         |      |     |    0%|
-|compute           |  1% | 1% |   1%   |      | 9%|    1%   |  3%  |  1% |   13%|
+|compute           |  1% | 1% |   1%   |      | 9%|    1%   |  3%  |  1% |   14%|
 |concept_check     |     |    |        |      |   |         |      |     |    0%|
 |config            |     |    |        |      |   |         |      |     |    0%|
 |container         |     |    |        |      |   |         |      |     |    0%|
 |container_hash    |     |    |        |      |   |         |      |     |    0%|
-|context           |     |    |        |      |   |   11%   |      |     |   11%|
+|context           |     | 2% |   1%   |      |23%|    2%   |  7%  |  1% |   34%|
 |contract          |     | 2% |   1%   |      |23%|    2%   |  7%  |     |   33%|
-|conversion        |     |    |        |      |   |    4%   |      |     |    4%|
+|conversion        |     |    |        |      |33%|    3%   |      |     |   35%|
 |convert           |  1% | 1% |   1%   |      | 7%|    1%   |      |     |    8%|
 |core              |     |    |        |      |   |         |      |     |    0%|
-|coroutine         |     |    |        |      |36%|    3%   |      |     |   39%|
+|coroutine         |     | 2% |   1%   |      |22%|    2%   |  7%  |  1% |   32%|
 |coroutine2        |     |    |        |      |   |   11%   |      |     |   11%|
 |crc               |  1% |    |        |      |   |         |      |     |    1%|
 |date_time         |  1% | 1% |   1%   |      |19%|    2%   |      |     |   22%|
@@ -54,12 +54,12 @@ library blocking and added source code overhead is **Boost.MPL**.
 |dynamic_bitset    |     |    |        |      |   |         |      |     |    0%|
 |endian            |     |    |        |      |   |         |      |     |    0%|
 |exception         |     |    |        |      |   |   18%   |      |  3% |   20%|
-|fiber             |     |    |        |      |   |    7%   |      |     |    7%|
+|fiber             |     | 2% |   1%   |      |28%|    3%   |      |     |   32%|
 |filesystem        |     |    |        |      |43%|    4%   |      |     |   46%|
 |flyweight         |     | 1% |   1%   |      |13%|    2%   |      |  1% |   15%|
 |foreach           |     |    |        |      |46%|         |      |     |   46%|
 |format            |     |    |        |      |   |    7%   |      |     |    7%|
-|function          |     | 3% |   2%   |      |   |         |      |     |    4%|
+|function          |     | 2% |   1%   |      |32%|         |      |     |   35%|
 |function_types    |     |    |        |      |47%|         |      |     |   47%|
 |functional        |     | 2% |   1%   |      |30%|         |      |     |   32%|
 |fusion            |     |    |        |      |16%|         |      |  1% |   16%|
@@ -69,7 +69,7 @@ library blocking and added source code overhead is **Boost.MPL**.
 |graph_parallel    |  1% | 1% |   1%   |      | 7%|    1%   |  3%  |  1% |   11%|
 |hana              |     |    |        |      |18%|         |      |  1% |   18%|
 |heap              |  1% | 1% |   1%   |      |16%|         |      |     |   18%|
-|histogram         |     |    |        |      |40%|    4%   |      |     |   43%|
+|histogram         |     |    |        |      |39%|    4%   |      |     |   43%|
 |hof               |     |    |        |      |   |         |      |     |    0%|
 |icl               |  1% |    |        |      |18%|    2%   |      |     |   20%|
 |integer           |     |    |        |      |   |         |      |     |    0%|
@@ -81,9 +81,9 @@ library blocking and added source code overhead is **Boost.MPL**.
 |lambda            |     | 3% |        |  5%  |45%|         |      |  1% |   52%|
 |lexical_cast      |  1% |    |        |      |22%|         |      |     |   22%|
 |local_function    |     | 2% |   1%   |      |31%|         |      |     |   33%|
-|locale            |     | 3% |   1%   |      |42%|    4%   |      |     |   48%|
+|locale            |     | 2% |   1%   |      |23%|    2%   |  7%  |  1% |   33%|
 |lockfree          |  1% | 1% |   1%   |      |17%|         |      |  1% |   19%|
-|log               |  1% | 1% |   1%   |      | 6%|    1%   |  2%  |  1% |    9%|
+|log               |  1% | 1% |   1%   |      | 6%|    1%   |  2%  |  1% |    8%|
 |logic             |     |    |        |      |   |         |      |     |    0%|
 |math              |  1% | 1% |        |  2%  |11%|    1%   |      |  1% |   14%|
 |metaparse         |     |    |        |      |48%|         |      |     |   48%|
@@ -94,18 +94,18 @@ library blocking and added source code overhead is **Boost.MPL**.
 |msm               |     | 1% |   1%   |      | 9%|         |      |  1% |   10%|
 |multi_array       |  1% |    |        |      |47%|         |      |     |   47%|
 |multi_index       |     | 2% |        |      |37%|    3%   |      |  1% |   43%|
-|multiprecision    |  1% |    |        |      |10%|    1%   |      |  1% |   11%|
+|multiprecision    |  1% |    |        |      |11%|    1%   |      |  1% |   11%|
 |nowide            |     |    |        |      |42%|    4%   |      |     |   45%|
 |numeric/conversion|     |    |        |      |51%|         |      |     |   51%|
 |numeric/interval  |     |    |        |      |   |         |      |     |    0%|
 |numeric/odeint    |  1% | 1% |   1%   |      | 9%|    1%   |  3%  |  1% |   12%|
-|numeric/ublas     |  1% | 1% |   1%   |      | 9%|    1%   |  3%  |  1% |   13%|
+|numeric/ublas     |  1% | 1% |   1%   |      | 9%|    1%   |  3%  |  1% |   14%|
 |optional          |     |    |        |      |   |         |      |     |    0%|
 |outcome           |     |    |        |      |   |   11%   |      |     |   11%|
 |parameter         |     | 1% |   1%   |      |18%|         |      |     |   19%|
 |parameter_python  |     | 2% |   1%   |      |35%|    3%   |      |  1% |   41%|
 |phoenix           |     | 1% |   1%   |      | 9%|    1%   |      |     |   11%|
-|poly_collection   |     |    |        |      |29%|    3%   |      |     |   31%|
+|poly_collection   |     |    |        |      |30%|    3%   |      |     |   32%|
 |polygon           |     |    |        |      |   |         |      |     |    0%|
 |pool              |     |    |        |      |   |         |      |     |    0%|
 |predef            |     |    |        |      |   |         |      |     |    0%|
@@ -116,7 +116,7 @@ library blocking and added source code overhead is **Boost.MPL**.
 |property_tree     |     | 2% |        |      |33%|    3%   |      |  1% |   38%|
 |proto             |     |    |        |      |15%|         |      |     |   15%|
 |ptr_container     |  1% |    |        |      |27%|    3%   |      |  1% |   29%|
-|python            |  1% | 2% |   1%   |      |20%|    2%   |      |  1% |   24%|
+|python            |  1% | 1% |   1%   |      |13%|    2%   |      |  1% |   16%|
 |qvm               |     |    |        |      |   |         |      |     |    0%|
 |random            |  1% |    |        |      |19%|         |      |     |   19%|
 |range             |  1% |    |        |      |17%|    2%   |      |  1% |   18%|
@@ -124,11 +124,11 @@ library blocking and added source code overhead is **Boost.MPL**.
 |rational          |     |    |        |      |   |         |      |     |    0%|
 |regex             |     |    |        |      |41%|    4%   |      |     |   44%|
 |safe_numerics     |     |    |        |      |   |         |      |     |    0%|
-|scope_exit        |     | 3% |   2%   |      |   |         |      |     |    4%|
-|serialization     |  1% |    |        |      |21%|    2%   |      |  1% |   23%|
+|scope_exit        |     | 2% |   1%   |      |32%|         |      |     |   34%|
+|serialization     |  1% | 2% |   1%   |      |21%|    2%   |      |  1% |   24%|
 |signals2          |     | 1% |   1%   |      |17%|    2%   |      |  1% |   20%|
 |smart_ptr         |     |    |        |      |   |   15%   |      |     |   15%|
-|sort              |     |    |        |      |41%|         |      |     |   41%|
+|sort              |     |    |        |      |44%|         |      |     |   44%|
 |spirit            |  1% | 1% |   1%   |      | 6%|    1%   |  2%  |  1% |    9%|
 |stacktrace        |  1% |    |        |      |   |         |      |     |    1%|
 |statechart        |     | 2% |   1%   |      |32%|    3%   | 10%  |     |   46%|
@@ -136,16 +136,16 @@ library blocking and added source code overhead is **Boost.MPL**.
 |static_string     |     |    |        |      |   |         |      |     |    0%|
 |system            |     |    |        |      |   |         |      |     |    0%|
 |test              |     | 2% |   1%   |      |34%|    3%   |      |     |   39%|
-|thread            |     | 2% |   1%   |      |24%|    2%   |  8%  |  1% |   35%|
+|thread            |  1% | 1% |   1%   |      |16%|    2%   |  5%  |  1% |   24%|
 |throw_exception   |     |    |        |      |   |         |      |     |    0%|
-|timer             |     |    |        |      |   |         |      |     |    0%|
+|timer             |     |    |        |      |42%|         |      |     |   42%|
 |tokenizer         |     |    |        |      |49%|         |      |     |   49%|
 |tti               |     |    |        |      |46%|         |      |     |   46%|
 |tuple             |     |    |        |      |   |         |      |  4% |    4%|
-|type_erasure      |     |    |        |      |15%|    2%   |      |     |   16%|
+|type_erasure      |     | 1% |        |      |14%|    2%   |  5%  |     |   19%|
 |type_index        |     |    |        |      |   |    8%   |      |     |    8%|
 |type_traits       |     |    |        |      |   |         |      |     |    0%|
-|typeof            |     |    |        |      |   |         |      |     |    0%|
+|typeof            |     |    |        |      |34%|         |      |     |   34%|
 |units             |     | 1% |        |  2%  |19%|         |      |  1% |   22%|
 |unordered         |     |    |        |      |   |    4%   |      |  1% |    5%|
 |utility           |     |    |        |      |   |         |      |     |    0%|
@@ -155,5 +155,5 @@ library blocking and added source code overhead is **Boost.MPL**.
 |vmd               |     |    |        |      |   |         |      |     |    0%|
 |wave              |  1% | 1% |        |      |13%|    2%   |  4%  |  1% |   19%|
 |winapi            |     |    |        |      |   |         |      |     |    0%|
-|xpressive         |  1% |    |        |      |11%|    1%   |      |     |   11%|
+|xpressive         |  1% |    |        |      |11%|    1%   |      |     |   12%|
 |yap               |     |    |        |      |   |         |      |     |    0%|
