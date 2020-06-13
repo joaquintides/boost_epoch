@@ -17,7 +17,7 @@
   }, 
   "lambda": {
     "epoch": "11", 
-    "reason": "Subsumed by C+11 lambda expressions"
+    "reason": "Subsumed by C++11 lambda expressions"
   }, 
   "mpl": {
     "epoch": "11", 

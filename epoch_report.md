@@ -543,7 +543,7 @@ C++03 or later
 **Epochs:**  
 [`Boost03`](#boost03)  
 **Why not in Boost11:**  
-Subsumed by C+11 lambda expressions  
+Subsumed by C++11 lambda expressions  
 
 ### `lexical_cast`
 

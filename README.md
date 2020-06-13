@@ -98,17 +98,17 @@ The original formulation, that we can call *strict mode*, blocks a library **X**
 if **X** depends on explicitly rejected libraries or on any other library **Y** which in its turn
 transitively depends on rejected libraries. Now, consider the case of **Boost.QVM**:
 
-* **Boost.QVM** depends (across all epochs) on: **Boost.Assert**, **Boost.Config**, **Boost.Core**, **Boost.Exception**, **Boost.StaticAssert**, **Boost.ThrowException**.
+* **Boost.QVM** depends (across all epochs) on: **Boost.Assert**, **Boost.Config**, **Boost.Core**, **Boost.Exception**, **Boost.StaticAssert** and **Boost.ThrowException**.
 * **Boost.Exception** depends on: **Boost.SmartPtr**, **Boost.Tuple**, and others.
 
-Due to its dependency on **Boost.SmartPt** and **Boost.Tuple**, **Boost.Exception** is banned from
+Due to its dependency on **Boost.SmartPtr** and **Boost.Tuple**, **Boost.Exception** is banned from
 **Boost11**, which, under strict-mode rules, implies that **Boost.QVM** is also blocked. But note
-that, actually, **Boost.QVM** does *not* depend on either  **Boost.SmartPt** or **Boost.Tuple**:
+that, actually, **Boost.QVM** does *not* depend on either **Boost.SmartPtr** or **Boost.Tuple**:
 as it happens, the particular **Boost.Exception** headers included from **Boost.QVM** are free of these dependencies
-(that is, they are to be found in some other **Boost.Exception** headers that **Boost.QVM** does not include).
-Put another way, if we remove **Boost.SmartPt** or **Boost.Tuple** from a local Boost installation,
+(that is, they are to be found in some other **Boost.Exception** headers that **Boost.QVM** does not use).
+Put another way, if we remove **Boost.SmartPtr** or **Boost.Tuple** from a local Boost installation,
 **Boost.QVM** will continue to be fully functional (not so **Boost.Exception**, of course).
-This motivates the introduction of a variation of epoch membership rules that we can dub *lax mode*
+This motivates the introduction of a variation of epoch membership rules that we can dub *lax mode*:
 
 * _(Lax mode)_ A Boost library **X** belongs to epoch **BoostN** if:
   * **X** is compatible with C++**N**,
